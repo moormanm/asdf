@@ -90,21 +90,7 @@ $(document).ready(function(){
               <li><a href="<?php echo $customer_ban_ip; ?>"><?php echo $text_customer_ban_ip; ?></a></li>
             </ul>
           </li>
-          <li><a class="parent"><?php echo $text_voucher; ?></a>
-            <ul>
-              <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-              <li><a href="<?php echo $voucher_theme; ?>"><?php echo $text_voucher_theme; ?></a></li>
-            </ul>
-          </li>
-          <!-- PAYPAL MANAGE NAVIGATION LINK -->
-          <?php if ($pp_express_status) { ?>
-           <li><a class="parent" href="<?php echo $paypal_express; ?>"><?php echo $text_paypal_express; ?></a>
-             <ul>
-               <li><a href="<?php echo $paypal_express_search; ?>"><?php echo $text_paypal_express_search; ?></a></li>
-             </ul>
-           </li>
-          <?php } ?>
-          <!-- PAYPAL MANAGE NAVIGATION LINK END -->
+
           <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
         </ul>
       </li>
