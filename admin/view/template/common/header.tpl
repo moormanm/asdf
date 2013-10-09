@@ -104,32 +104,7 @@ $(document).ready(function(){
               <li><a href="<?php echo $user_group; ?>"><?php echo $text_user_group; ?></a></li>
             </ul>
           </li>
-          <li><a class="parent"><?php echo $text_localisation; ?></a>
-            <ul>
-              <li><a href="<?php echo $language; ?>"><?php echo $text_language; ?></a></li>
-              <li><a href="<?php echo $currency; ?>"><?php echo $text_currency; ?></a></li>
-              <li><a href="<?php echo $stock_status; ?>"><?php echo $text_stock_status; ?></a></li>
-              <li><a href="<?php echo $order_status; ?>"><?php echo $text_order_status; ?></a></li>
-              <li><a class="parent"><?php echo $text_return; ?></a>
-                <ul>
-                  <li><a href="<?php echo $return_status; ?>"><?php echo $text_return_status; ?></a></li>
-                  <li><a href="<?php echo $return_action; ?>"><?php echo $text_return_action; ?></a></li>
-                  <li><a href="<?php echo $return_reason; ?>"><?php echo $text_return_reason; ?></a></li>
-                </ul>
-              </li>
-              <li><a href="<?php echo $country; ?>"><?php echo $text_country; ?></a></li>
-              <li><a href="<?php echo $zone; ?>"><?php echo $text_zone; ?></a></li>
-              <li><a href="<?php echo $geo_zone; ?>"><?php echo $text_geo_zone; ?></a></li>
-              <li><a class="parent"><?php echo $text_tax; ?></a>
-                <ul>
-                  <li><a href="<?php echo $tax_class; ?>"><?php echo $text_tax_class; ?></a></li>
-                  <li><a href="<?php echo $tax_rate; ?>"><?php echo $text_tax_rate; ?></a></li>
-                </ul>
-              </li>
-              <li><a href="<?php echo $length_class; ?>"><?php echo $text_length_class; ?></a></li>
-              <li><a href="<?php echo $weight_class; ?>"><?php echo $text_weight_class; ?></a></li>
-            </ul>
-          </li>
+          
         </ul>
       </li>
       <li id="reports"><a class="top"><?php echo $text_reports; ?></a>
