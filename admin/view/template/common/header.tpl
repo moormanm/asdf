@@ -75,7 +75,7 @@ $(document).ready(function(){
             </ul>
           </li>
           <li><a href="<?php echo $option; ?>"><?php echo $text_option; ?></a></li>
-          <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+          
           <li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
         </ul>
       </li>
