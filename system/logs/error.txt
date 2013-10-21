@@ -1010,3 +1010,16 @@
 2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
 2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
 2013-10-20 22:12:53 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-21 0:41:48 - PHP Notice:  Error: Could not load model sale/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:43:46 - PHP Notice:  Error: Could not load model sale/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:43:47 - PHP Notice:  Error: Could not load model sale/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:47:22 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:47:23 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:47:24 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:47:25 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:49:32 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:50:09 - PHP Notice:  Error: Could not load model sale/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-21 0:54:50 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-21 0:54:51 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-21 0:54:58 - PHP Notice:  Error: Unknown column 'o.customer_id' in 'where clause'<br />Error No: 1054<br />SELECT *, (SELECT CONCAT(c.firstname, ' ', c.lastname) FROM oc_customer c WHERE c.customer_id = o.customer_id) AS customer FROM `oc_order` o WHERE o.order_id = '8' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-21 0:54:59 - PHP Notice:  Error: Unknown column 'o.customer_id' in 'where clause'<br />Error No: 1054<br />SELECT *, (SELECT CONCAT(c.firstname, ' ', c.lastname) FROM oc_customer c WHERE c.customer_id = o.customer_id) AS customer FROM `oc_order` o WHERE o.order_id = '8' in /var/www/html/opencart/system/database/mysql.php on line 50

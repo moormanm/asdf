@@ -3,13 +3,8 @@ class ControllerSaleOrder extends Controller {
 	private $error = array();
 
   	public function index() {
-		$this->language->load('sale/order');
-
 		$this->document->setTitle($this->language->get('heading_title'));
-
-		$this->load->model('sale/order');
-
-    	$this->getList();
+         	$this->getList();
   	}
 	
   	public function insert() {
@@ -302,7 +297,7 @@ class ControllerSaleOrder extends Controller {
 
 		$order_total = $this->model_sale_order->getTotalOrders($data);
 
-		$results = $this->model_checkout_order->getOrders($data);
+		$results = $this->model_order_order->getOrders($data);
 
     	foreach ($results as $result) {
 			$action = array();
@@ -1159,7 +1154,7 @@ class ControllerSaleOrder extends Controller {
 		$this->data['error'] = '';
 		$this->data['success'] = '';
 		
-		$this->load->model('checkout/order');
+		$this->load->model('sale/order');
 	
 		if ($this->request->server['REQUEST_METHOD'] == 'POST') {
 			if (!$this->user->hasPermission('modify', 'sale/order')) { 
@@ -1188,7 +1183,7 @@ class ControllerSaleOrder extends Controller {
 		
 		$this->data['histories'] = array();
 			
-		$results = $this->model_checkout_order->getOrderHistories($this->request->get['order_id'], ($page - 1) * 10, 10);
+		$results = $this->model_order_order->getOrderHistories($this->request->get['order_id'], ($page - 1) * 10, 10);
       		
 		foreach ($results as $result) {
         	$this->data['histories'][] = array(
@@ -1199,7 +1194,7 @@ class ControllerSaleOrder extends Controller {
         	);
       	}			
 		
-		$history_total = $this->model_checkout_order->getTotalOrderHistories($this->request->get['order_id']);
+		$history_total = $this->model_order_order->getTotalOrderHistories($this->request->get['order_id']);
 			
 		$pagination = new Pagination();
 		$pagination->total = $history_total;
@@ -1217,7 +1212,7 @@ class ControllerSaleOrder extends Controller {
 	
 
   	public function invoice() {
-		$this->language->load('checkout/order');
+		$this->language->load('sale/order');
 
 		$this->data['title'] = $this->language->get('heading_title');
 
@@ -1252,7 +1247,7 @@ class ControllerSaleOrder extends Controller {
 		$this->data['column_total'] = $this->language->get('column_total');
 		$this->data['column_comment'] = $this->language->get('column_comment');
 
-		$this->load->model('checkout/order');
+		$this->load->model('sale/order');
 
 		$this->load->model('setting/setting');
 
@@ -1267,7 +1262,7 @@ class ControllerSaleOrder extends Controller {
 		}
 
 		foreach ($orders as $order_id) {
-			$order_info = $this->model_checkout_order->getOrder($order_id);
+			$order_info = $this->model_order_order->getOrder($order_id);
 
 			if ($order_info) {
 				$store_info = $this->model_setting_setting->getSetting('config', $order_info['store_id']);
@@ -1294,12 +1289,12 @@ class ControllerSaleOrder extends Controller {
 
 				$product_data = array();
 
-				$products = $this->model_checkout_order->getOrderProducts($order_id);
+				$products = $this->model_order_order->getOrderProducts($order_id);
 
 				foreach ($products as $product) {
 					$option_data = array();
 
-					$options = $this->model_checkout_order->getOrderOptions($order_id, $product['order_product_id']);
+					$options = $this->model_order_order->getOrderOptions($order_id, $product['order_product_id']);
 
 					foreach ($options as $option) {
 						if ($option['type'] != 'file') {
