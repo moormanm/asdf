@@ -48,3 +48,965 @@
 2013-09-21 20:19:48 - PHP Notice:  Undefined variable: profileCount in /var/www/html/opencart/admin/view/template/catalog/product_form.tpl on line 1054
 2013-09-21 20:20:21 - PHP Notice:  Undefined variable: profileCount in /var/www/html/opencart/admin/view/template/catalog/product_form.tpl on line 1028
 2013-09-21 20:22:10 - PHP Notice:  Undefined variable: profileCount in /var/www/html/opencart/admin/view/template/catalog/product_form.tpl on line 1028
+2013-09-22 13:42:49 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:42:49 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:44:10 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:44:10 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:45:57 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:45:57 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:45:59 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:45:59 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:11 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:11 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:13 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:13 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:14 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:14 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:15 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.language.1379796510): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-09-22 13:47:15 - PHP Warning:  unlink(/var/www/html/opencart/system/cache/cache.currency.1379798965): Permission denied in /var/www/html/opencart/system/library/cache.php on line 18
+2013-10-10 2:44:53 - PHP Notice:  Error: Could not load template /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl! in /var/www/html/opencart/system/engine/controller.php on line 90
+2013-10-10 3:01:36 - PHP Notice:  Use of undefined constant confirm - assumed 'confirm' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:36 - PHP Notice:  Use of undefined constant tpl - assumed 'tpl' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:36 - PHP Warning:  include(confirmtpl): failed to open stream: No such file or directory in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:36 - PHP Warning:  include(): Failed opening 'confirmtpl' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:38 - PHP Notice:  Use of undefined constant confirm - assumed 'confirm' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:38 - PHP Notice:  Use of undefined constant tpl - assumed 'tpl' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:38 - PHP Warning:  include(confirmtpl): failed to open stream: No such file or directory in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:38 - PHP Warning:  include(): Failed opening 'confirmtpl' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:39 - PHP Notice:  Use of undefined constant confirm - assumed 'confirm' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:39 - PHP Notice:  Use of undefined constant tpl - assumed 'tpl' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:39 - PHP Warning:  include(confirmtpl): failed to open stream: No such file or directory in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:39 - PHP Warning:  include(): Failed opening 'confirmtpl' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:40 - PHP Notice:  Use of undefined constant confirm - assumed 'confirm' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:40 - PHP Notice:  Use of undefined constant tpl - assumed 'tpl' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:40 - PHP Warning:  include(confirmtpl): failed to open stream: No such file or directory in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:40 - PHP Warning:  include(): Failed opening 'confirmtpl' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:41 - PHP Notice:  Use of undefined constant confirm - assumed 'confirm' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:41 - PHP Notice:  Use of undefined constant tpl - assumed 'tpl' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:41 - PHP Warning:  include(confirmtpl): failed to open stream: No such file or directory in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:41 - PHP Warning:  include(): Failed opening 'confirmtpl' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:01:55 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-10 3:01:55 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-10 3:01:55 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-10 3:01:55 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-10 3:01:55 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 10
+2013-10-10 3:01:55 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:01:55 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:01:55 - PHP Notice:  Undefined variable: vouchers in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:01:55 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:01:55 - PHP Warning:  array_pop() expects parameter 1 to be array, null given in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 51
+2013-10-10 3:01:56 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-10 3:01:56 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-10 3:01:56 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-10 3:01:56 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-10 3:01:56 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 10
+2013-10-10 3:01:56 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:01:56 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:01:56 - PHP Notice:  Undefined variable: vouchers in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:01:56 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:01:56 - PHP Warning:  array_pop() expects parameter 1 to be array, null given in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 51
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 10
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:02:29 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: vouchers in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:02:29 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:02:29 - PHP Warning:  array_pop() expects parameter 1 to be array, null given in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 51
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 10
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:02:29 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:02:29 - PHP Notice:  Undefined variable: vouchers in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:02:29 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:02:29 - PHP Warning:  array_pop() expects parameter 1 to be array, null given in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 51
+2013-10-10 3:03:15 - PHP Notice:  Undefined variable: totals in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 11
+2013-10-10 3:05:40 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-10 3:05:40 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-10 3:05:40 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-10 3:05:40 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-10 3:05:40 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 10
+2013-10-10 3:05:40 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:05:40 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-10 3:05:40 - PHP Notice:  Undefined variable: vouchers in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:05:40 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 40
+2013-10-10 3:05:40 - PHP Warning:  array_pop() expects parameter 1 to be array, null given in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 51
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 74
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 75
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 76
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 77
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 78
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 79
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 80
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 81
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 82
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 83
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 84
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 85
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 86
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 87
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 110
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 111
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 112
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 113
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 114
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 115
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 116
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 117
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 118
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 119
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 120
+2013-10-19 4:10:13 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 121
+2013-10-19 4:10:13 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 211
+2013-10-19 4:10:13 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 76
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 77
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 78
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 79
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 80
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 81
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 82
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 83
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 84
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 85
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 86
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 87
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 88
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 89
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 112
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 113
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 114
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 115
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 116
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 117
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 118
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 119
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 120
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 121
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 122
+2013-10-19 4:10:52 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 123
+2013-10-19 4:10:52 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 213
+2013-10-19 4:10:52 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 76
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 77
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 78
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 79
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 80
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 81
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 82
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 83
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 84
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 85
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 86
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 87
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 88
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 89
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 112
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 113
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 114
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 115
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 116
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 117
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 118
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 119
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 120
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 121
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 122
+2013-10-19 4:10:53 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 123
+2013-10-19 4:10:53 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 213
+2013-10-19 4:10:53 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 76
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 77
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 78
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 79
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 80
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 81
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 82
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 83
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 84
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 85
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 86
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 87
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 88
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: payment_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 89
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 112
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 113
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 114
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 115
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 116
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 117
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 118
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 119
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 120
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 121
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 122
+2013-10-19 4:10:56 - PHP Notice:  Undefined variable: shipping_address in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 123
+2013-10-19 4:10:56 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 213
+2013-10-19 4:10:56 - PHP Notice:  Error: Could not load model checkout/order! in /var/www/html/opencart/system/engine/loader.php on line 48
+2013-10-19 4:25:13 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 5
+2013-10-19 4:25:13 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-19 4:25:13 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-19 4:25:13 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-19 4:25:13 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-19 4:25:13 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 13
+2013-10-19 4:25:13 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 13
+2013-10-19 4:25:13 - PHP Notice:  Undefined variable: totals in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 29
+2013-10-19 4:25:13 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 29
+2013-10-19 4:29:56 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 5
+2013-10-19 4:29:56 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-19 4:29:56 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-19 4:29:56 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-19 4:29:56 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-19 4:29:56 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 13
+2013-10-19 4:29:56 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 13
+2013-10-19 4:29:56 - PHP Notice:  Undefined variable: totals in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 29
+2013-10-19 4:29:56 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 29
+2013-10-19 4:32:03 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 5
+2013-10-19 4:32:03 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-19 4:32:03 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-19 4:32:03 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-19 4:32:03 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-19 4:32:03 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-19 4:32:03 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-19 4:32:03 - PHP Notice:  Undefined variable: totals in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 30
+2013-10-19 4:32:03 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 30
+2013-10-19 4:33:10 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 5
+2013-10-19 4:33:10 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-19 4:33:10 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-19 4:33:10 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-19 4:33:10 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-19 4:33:10 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-19 4:33:10 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-19 4:33:10 - PHP Notice:  Undefined variable: totals in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 30
+2013-10-19 4:33:10 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 30
+2013-10-19 4:33:30 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 5
+2013-10-19 4:33:30 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-19 4:33:30 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-19 4:33:30 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-19 4:33:30 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-19 4:33:30 - PHP Notice:  Undefined variable: products in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-19 4:33:30 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 14
+2013-10-19 4:33:30 - PHP Notice:  Undefined variable: totals in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 30
+2013-10-19 4:33:30 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 30
+2013-10-19 4:35:54 - PHP Notice:  Undefined variable: column_name in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 5
+2013-10-19 4:35:54 - PHP Notice:  Undefined variable: column_model in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 6
+2013-10-19 4:35:54 - PHP Notice:  Undefined variable: column_quantity in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 7
+2013-10-19 4:35:54 - PHP Notice:  Undefined variable: column_price in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 8
+2013-10-19 4:35:54 - PHP Notice:  Undefined variable: column_total in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 9
+2013-10-19 4:35:54 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:37:40 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:38:59 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:43:16 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:43:18 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:43:50 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:43:51 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:44:06 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:44:07 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:47:15 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:47:57 - PHP Notice:  Error: Could not load template /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl! in /var/www/html/opencart/system/engine/controller.php on line 90
+2013-10-19 4:48:48 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:48:52 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:48:58 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:49:36 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:49:38 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:52:09 - PHP Notice:  Error: Could not load template /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl! in /var/www/html/opencart/system/engine/controller.php on line 90
+2013-10-19 4:52:12 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:52:14 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:52:15 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 4:58:36 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:00:50 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:00:51 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:01:10 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:01:55 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:02:31 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:02:57 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:05:11 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:05:27 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:06:04 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:06:30 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:08:24 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:08:48 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:08:50 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:09:49 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/view/theme/default/template/checkout/confirm.tpl on line 15
+2013-10-19 5:11:45 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 62
+2013-10-19 5:11:53 - PHP Notice:  Undefined index: href in /var/www/html/opencart/catalog/controller/checkout/confirm.php on line 62
+2013-10-19 14:27:22 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:27:22 - PHP Notice:  Undefined variable: error_firstname in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:27:22 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:27:22 - PHP Notice:  Undefined variable: error_firstname in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:30:32 - PHP Notice:  Undefined variable: reservationPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:36:37 - PHP Notice:  Undefined variable: errorSpecialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 56
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:36:55 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:37:44 - PHP Notice:  Undefined variable: errorSpecialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 56
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:38:08 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:38:23 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:38:51 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:39:39 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:39:54 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:40:13 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:40:15 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:40:17 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:40:35 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:41:20 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:42:31 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:42:38 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:43:02 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:43:57 - PHP Notice:  Undefined variable: button_continue in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 61
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:44:17 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: firstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 22
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: lastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 30
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:44:54 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:49:31 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:49:31 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:49:31 - PHP Notice:  Undefined variable: contactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 38
+2013-10-19 14:49:31 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:49:31 - PHP Notice:  Undefined variable: reservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 46
+2013-10-19 14:49:31 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:49:31 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:50:01 - PHP Notice:  Undefined variable: errorFirstName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 23
+2013-10-19 14:50:01 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 31
+2013-10-19 14:50:01 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:50:01 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 47
+2013-10-19 14:50:01 - PHP Notice:  Undefined variable: specialInstructions in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 55
+2013-10-19 14:51:07 - PHP Notice:  Undefined variable: errorPhoneNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 39
+2013-10-19 14:53:27 - PHP Notice:  Undefined variable: action in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 17
+2013-10-19 14:53:30 - PHP Notice:  Undefined variable: action in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 17
+2013-10-19 14:53:47 - PHP Notice:  Undefined variable: action in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 17
+2013-10-19 14:55:37 - PHP Notice:  Undefined index: email in /var/www/html/opencart/catalog/controller/account/login.php on line 201
+2013-10-19 14:55:37 - PHP Notice:  Undefined index: password in /var/www/html/opencart/catalog/controller/account/login.php on line 201
+2013-10-19 14:55:37 - PHP Notice:  Undefined index: email in /var/www/html/opencart/catalog/controller/account/login.php on line 205
+2013-10-19 15:00:54 - PHP Notice:  Undefined index: email in /var/www/html/opencart/catalog/controller/account/login.php on line 201
+2013-10-19 15:00:54 - PHP Notice:  Undefined index: password in /var/www/html/opencart/catalog/controller/account/login.php on line 201
+2013-10-19 15:00:54 - PHP Notice:  Undefined index: email in /var/www/html/opencart/catalog/controller/account/login.php on line 205
+2013-10-19 15:35:32 - PHP Notice:  Undefined variable: errorLastName in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 32
+2013-10-19 15:35:32 - PHP Notice:  Undefined variable: errorContactNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 40
+2013-10-19 15:35:32 - PHP Notice:  Undefined variable: errorReservationNumber in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 48
+2013-10-19 15:49:51 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 15:49:51 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 15:49:51 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 15:49:51 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 15:49:53 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 15:49:53 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 15:49:53 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 15:49:53 - PHP Notice:  Undefined offset: 0 in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 112
+2013-10-19 17:11:35 - PHP Notice:  Undefined variable: simple_php_captcha in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 65
+2013-10-19 17:12:04 - PHP Notice:  Undefined variable: simple_php_captcha in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 65
+2013-10-19 17:21:03 - PHP Notice:  Use of undefined constant image - assumed 'image' in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 62
+2013-10-19 17:21:03 - PHP Notice:  Undefined variable: captcha in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 62
+2013-10-19 17:21:03 - PHP Notice:  Undefined variable: errorCaptcha in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 64
+2013-10-19 17:23:43 - PHP Notice:  Undefined variable: captchaImg in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 62
+2013-10-19 17:23:43 - PHP Notice:  Undefined variable: errorCaptcha in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 64
+2013-10-19 17:23:44 - PHP Notice:  Undefined variable: captchaImg in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 62
+2013-10-19 17:23:44 - PHP Notice:  Undefined variable: errorCaptcha in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 64
+2013-10-19 17:35:19 - PHP Notice:  Undefined variable: captchaImg in /var/www/html/opencart/catalog/view/theme/default/template/checkout/checkout.tpl on line 62
+2013-10-19 22:46:29 - PHP Notice:  Undefined index: email in /var/www/html/opencart/catalog/model/checkout/order.php on line 7
+2013-10-19 22:46:29 - PHP Notice:  Undefined index: ipAddress in /var/www/html/opencart/catalog/model/checkout/order.php on line 8
+2013-10-19 22:46:29 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '',  lastName = 'asdf',  firstName = 'asdf',  reservationNumber = 'asdf',  orders' at line 2<br />Error No: 1064<br />INSERT INTO `oc_orders` 
+           SET contactNumber = 'asdfasdf', email = '', ipAddress ='', datePurchased = NOW()',  lastName = 'asdf',  firstName = 'asdf',  reservationNumber = 'asdf',  orders_status = '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-19 22:52:29 - PHP Notice:  Use of undefined constant orderData - assumed 'orderData' in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 130
+2013-10-19 22:52:29 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '',  lastName = 'o',  firstName = 'o',  reservationNumber = 'o',  orders_status =' at line 2<br />Error No: 1064<br />INSERT INTO `oc_orders` 
+           SET contactNumber = 'o', email = 'o', ipAddress ='o', datePurchased = NOW()',  lastName = 'o',  firstName = 'o',  reservationNumber = 'o',  orders_status = '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-19 22:52:55 - PHP Notice:  Undefined variable: orderData in /var/www/html/opencart/catalog/controller/checkout/checkout.php on line 130
+2013-10-19 22:52:55 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '',  lastName = '',  firstName = '',  reservationNumber = '',  orders_status = '0' at line 2<br />Error No: 1064<br />INSERT INTO `oc_orders` 
+           SET contactNumber = '', email = '', ipAddress ='', datePurchased = NOW()',  lastName = '',  firstName = '',  reservationNumber = '',  orders_status = '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-19 22:53:29 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '',  lastName = 'asdf',  firstName = 'asdf',  reservationNumber = 'asdf',  orders' at line 2<br />Error No: 1064<br />INSERT INTO `oc_orders` 
+           SET contactNumber = 'asdfasdf', email = 'michael.e.moorman@gmail.com', ipAddress ='68.49.105.108', datePurchased = NOW()',  lastName = 'asdf',  firstName = 'asdf',  reservationNumber = 'asdf',  orders_status = '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-19 22:54:59 - PHP Notice:  Error: Table 'shopcierge0.oc_orders' doesn't exist<br />Error No: 1146<br />INSERT INTO `oc_orders` 
+           SET contactNumber = 'asdfasdf', email = 'michael.e.moorman@gmail.com', ipAddress ='68.49.105.108', datePurchased = NOW(),  lastName = 'asdf',  firstName = 'asdf',  reservationNumber = 'asdf',  orders_status = '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-19 23:10:12 - PHP Notice:  Error: Table 'shopcierge0.oc_orders' doesn't exist<br />Error No: 1146<br />INSERT INTO `oc_orders` 
+           SET contactNumber = 'asdfasdf', email = 'michael.e.moorman@gmail.com', ipAddress ='68.49.105.108', datePurchased = NOW(),  lastName = 'asdf',  firstName = 'asdf',  reservationNumber = 'asdf',  orders_status = '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-19 23:26:48 - PHP Notice:  Undefined index: products in /var/www/html/opencart/catalog/model/checkout/order.php on line 15
+2013-10-19 23:26:48 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/model/checkout/order.php on line 15
+2013-10-19 23:33:15 - PHP Notice:  Undefined index: products in /var/www/html/opencart/catalog/model/checkout/order.php on line 15
+2013-10-19 23:33:15 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/model/checkout/order.php on line 15
+2013-10-19 23:34:58 - PHP Notice:  Undefined index: tax in /var/www/html/opencart/catalog/model/checkout/order.php on line 24
+2013-10-19 23:41:32 - PHP Notice:  Undefined index: tax in /var/www/html/opencart/catalog/model/checkout/order.php on line 24
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: tax in /var/www/html/opencart/catalog/model/checkout/order.php on line 25
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-19 23:46:16 - PHP Notice:  Undefined index: value in /var/www/html/opencart/catalog/model/checkout/order.php on line 34
+2013-10-20 1:33:27 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 12:59:48 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:01:32 - PHP Notice:  Error: Unknown column 'date_added' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' AND YEAR(date_added) = '2013' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:01:39 - PHP Notice:  Error: Unknown column 'date_added' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' AND YEAR(date_added) = '2013' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:01:40 - PHP Notice:  Error: Unknown column 'date_added' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' AND YEAR(date_added) = '2013' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:01:42 - PHP Notice:  Error: Unknown column 'date_added' in 'where clause'<br />Error No: 1054<br />SELECT SUM(total) AS total FROM `oc_order` WHERE order_status_id > '0' AND YEAR(date_added) = '2013' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:05:00 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:06:36 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0' AND YEAR(datePurchased) = '2013'' at line 1<br />Error No: 1064<br />SELECT SUM(total) AS total FROM `oc_order` WHERE orders_statu '0' AND YEAR(datePurchased) = '2013' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:06:55 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0' AND YEAR(datePurchased) = '2013'' at line 1<br />Error No: 1064<br />SELECT SUM(total) AS total FROM `oc_order` WHERE orders_status '0' AND YEAR(datePurchased) = '2013' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:07:15 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:07:17 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:07:18 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:07:19 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:09:56 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:09:57 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '0' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:11:00 - PHP Notice:  Error: Unknown column 'o.order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM oc_order_status os WHERE os.order_status_id = o.order_status_id AND os.language_id = '1') AS status, o.total, o.currency_code, o.currency_value, o.date_added, o.date_modified FROM `oc_order` o WHERE o.order_status_id > '0' ORDER BY o.date_added DESC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:11:56 - PHP Notice:  Error: Unknown column 'o.currency_code' in 'field list'<br />Error No: 1054<br />SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM oc_order_status os WHERE os.order_status_id = o.orders_status AND os.language_id = '1') AS status, o.total, o.currency_code, o.currency_value, o.date_added, o.date_modified FROM `oc_order` o WHERE o.order_status_id > '0' ORDER BY o.date_added DESC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:13:06 - PHP Notice:  Error: Unknown column 'o.date_modified' in 'field list'<br />Error No: 1054<br />SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM oc_order_status os WHERE os.order_status_id = o.orders_status AND os.language_id = '1') AS status, o.total, o.datePurchased, o.date_modified FROM `oc_order` o WHERE o.order_status_id > '0' ORDER BY o.date_added DESC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:14:21 - PHP Notice:  Error: Unknown column 'o.order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM oc_order_status os WHERE os.order_status_id = o.orders_status AND os.language_id = '1') AS status, o.total, o.datePurchased, o.dateModified FROM `oc_order` o WHERE o.order_status_id > '0' ORDER BY o.date_added DESC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:15:11 - PHP Notice:  Error: Unknown column 'o.date_added' in 'order clause'<br />Error No: 1054<br />SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM oc_order_status os WHERE os.order_status_id = o.orders_status AND os.language_id = '1') AS status, o.total, o.datePurchased, o.dateModified FROM `oc_order` o WHERE o.orders_status > '0' ORDER BY o.date_added DESC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:15:12 - PHP Notice:  Error: Unknown column 'o.date_added' in 'order clause'<br />Error No: 1054<br />SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM oc_order_status os WHERE os.order_status_id = o.orders_status AND os.language_id = '1') AS status, o.total, o.datePurchased, o.dateModified FROM `oc_order` o WHERE o.orders_status > '0' ORDER BY o.date_added DESC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:15:59 - PHP Notice:  Error: Unknown column 'o.date_added' in 'order clause'<br />Error No: 1054<br />SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM oc_order_status os WHERE os.order_status_id = o.orders_status AND os.language_id = '1') AS status, o.total, o.datePurchased, o.dateModified FROM `oc_order` o WHERE o.orders_status > '0' ORDER BY o.date_added DESC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:16:43 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:18:50 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:19:35 - PHP Notice:  Error: Unknown column 'o.customer_id' in 'where clause'<br />Error No: 1054<br />SELECT *, (SELECT CONCAT(c.firstname, ' ', c.lastname) FROM oc_customer c WHERE c.customer_id = o.customer_id) AS customer FROM `oc_order` o WHERE o.order_id = '8' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: amazon_order_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1543
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: store_name in /var/www/html/opencart/admin/controller/sale/order.php on line 1544
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: store_url in /var/www/html/opencart/admin/controller/sale/order.php on line 1545
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: customer_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1549
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: customer_group_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1557
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: fax in /var/www/html/opencart/admin/controller/sale/order.php on line 1567
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1569
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1570
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: reward in /var/www/html/opencart/admin/controller/sale/order.php on line 1583
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: affiliate_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1587
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: affiliate_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1588
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: affiliate_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1590
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: commission in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: forwarded_ip in /var/www/html/opencart/admin/controller/sale/order.php on line 1613
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: accept_language in /var/www/html/opencart/admin/controller/sale/order.php on line 1615
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1618
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1619
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1620
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_company_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1621
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_tax_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1622
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1623
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1624
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1625
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1626
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1627
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1628
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1629
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1630
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1631
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1632
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1633
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1634
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1635
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1636
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1637
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1638
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: shipping_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1639
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 13:27:30 - PHP Notice:  Undefined index: payment_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1919
+2013-10-20 13:27:30 - PHP Notice:  Error: Unknown column 'oh.orders_status' in 'on clause'<br />Error No: 1054<br />SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM oc_order_history oh LEFT JOIN oc_order_status os ON oh.orders_status = os.orders_status WHERE oh.order_id = '8' AND os.language_id = '1' ORDER BY oh.date_added ASC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:27:46 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 13:27:46 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 13:27:46 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 13:27:46 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 13:27:46 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 13:27:46 - PHP Notice:  Undefined index: invoice_prefix in /var/www/html/opencart/admin/model/sale/order.php on line 514
+2013-10-20 13:27:46 - PHP Notice:  Error: Unknown column 'invoice_no' in 'field list'<br />Error No: 1054<br />SELECT MAX(invoice_no) AS invoice_no FROM `oc_order` WHERE invoice_prefix = '' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:27:47 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 13:27:47 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 13:27:47 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 13:27:47 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 13:27:47 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 13:27:47 - PHP Notice:  Undefined index: invoice_prefix in /var/www/html/opencart/admin/model/sale/order.php on line 514
+2013-10-20 13:27:47 - PHP Notice:  Error: Unknown column 'invoice_no' in 'field list'<br />Error No: 1054<br />SELECT MAX(invoice_no) AS invoice_no FROM `oc_order` WHERE invoice_prefix = '' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:54 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:28:55 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: amazon_order_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1543
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: store_name in /var/www/html/opencart/admin/controller/sale/order.php on line 1544
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: store_url in /var/www/html/opencart/admin/controller/sale/order.php on line 1545
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: customer_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1549
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: customer_group_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1557
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: fax in /var/www/html/opencart/admin/controller/sale/order.php on line 1567
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1569
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1570
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: reward in /var/www/html/opencart/admin/controller/sale/order.php on line 1583
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: affiliate_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1587
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: affiliate_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1588
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: affiliate_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1590
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: commission in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: forwarded_ip in /var/www/html/opencart/admin/controller/sale/order.php on line 1613
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: accept_language in /var/www/html/opencart/admin/controller/sale/order.php on line 1615
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1618
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1619
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1620
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_company_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1621
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_tax_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1622
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1623
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1624
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1625
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1626
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1627
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1628
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1629
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1630
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1631
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1632
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1633
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1634
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1635
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1636
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1637
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1638
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: shipping_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1639
+2013-10-20 13:34:47 - PHP Notice:  Undefined index: payment_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1919
+2013-10-20 13:34:47 - PHP Notice:  Error: Unknown column 'oh.orders_status' in 'on clause'<br />Error No: 1054<br />SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM oc_order_history oh LEFT JOIN oc_order_status os ON oh.orders_status = os.orders_status WHERE oh.order_id = '5' AND os.language_id = '1' ORDER BY oh.date_added ASC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:35:06 - PHP Notice:  Error: Unknown column 'date_modified' in 'field list'<br />Error No: 1054<br />UPDATE `oc_order` SET orders_status = '3', date_modified = NOW() WHERE order_id = '5' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:35:10 - PHP Notice:  Error: Unknown column 'date_modified' in 'field list'<br />Error No: 1054<br />UPDATE `oc_order` SET orders_status = '3', date_modified = NOW() WHERE order_id = '5' in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: store_id in /var/www/html/opencart/admin/controller/sale/order.php on line 2404
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_address_format in /var/www/html/opencart/admin/controller/sale/order.php on line 2424
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 2444
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 2445
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_company in /var/www/html/opencart/admin/controller/sale/order.php on line 2446
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 2447
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 2448
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_city in /var/www/html/opencart/admin/controller/sale/order.php on line 2449
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 2450
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 2451
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 2452
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_country in /var/www/html/opencart/admin/controller/sale/order.php on line 2453
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_address_format in /var/www/html/opencart/admin/controller/sale/order.php on line 2458
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 2478
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 2479
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_company in /var/www/html/opencart/admin/controller/sale/order.php on line 2480
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 2481
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 2482
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_city in /var/www/html/opencart/admin/controller/sale/order.php on line 2483
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 2484
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 2485
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 2486
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_country in /var/www/html/opencart/admin/controller/sale/order.php on line 2487
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: store_name in /var/www/html/opencart/admin/controller/sale/order.php on line 2541
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: store_url in /var/www/html/opencart/admin/controller/sale/order.php on line 2542
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: shipping_method in /var/www/html/opencart/admin/controller/sale/order.php on line 2550
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_company_id in /var/www/html/opencart/admin/controller/sale/order.php on line 2552
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_tax_id in /var/www/html/opencart/admin/controller/sale/order.php on line 2553
+2013-10-20 13:35:22 - PHP Notice:  Undefined index: payment_method in /var/www/html/opencart/admin/controller/sale/order.php on line 2554
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:56 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 13:35:57 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: amazon_order_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1543
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: store_name in /var/www/html/opencart/admin/controller/sale/order.php on line 1544
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: store_url in /var/www/html/opencart/admin/controller/sale/order.php on line 1545
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: customer_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1549
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: customer_group_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1557
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: fax in /var/www/html/opencart/admin/controller/sale/order.php on line 1567
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1569
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1570
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: reward in /var/www/html/opencart/admin/controller/sale/order.php on line 1583
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: affiliate_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1587
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: affiliate_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1588
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: affiliate_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1590
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: commission in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: forwarded_ip in /var/www/html/opencart/admin/controller/sale/order.php on line 1613
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: accept_language in /var/www/html/opencart/admin/controller/sale/order.php on line 1615
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1618
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1619
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1620
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_company_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1621
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_tax_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1622
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1623
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1624
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1625
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1626
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1627
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1628
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1629
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1630
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1631
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1632
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1633
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1634
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1635
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1636
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1637
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1638
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: shipping_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1639
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 16:14:51 - PHP Notice:  Undefined index: payment_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1919
+2013-10-20 16:14:52 - PHP Notice:  Error: Unknown column 'oh.orders_status' in 'on clause'<br />Error No: 1054<br />SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM oc_order_history oh LEFT JOIN oc_order_status os ON oh.orders_status = os.orders_status WHERE oh.order_id = '8' AND os.language_id = '1' ORDER BY oh.date_added ASC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:44 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:08:45 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: amazon_order_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1543
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: store_name in /var/www/html/opencart/admin/controller/sale/order.php on line 1544
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: store_url in /var/www/html/opencart/admin/controller/sale/order.php on line 1545
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: customer_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1549
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: customer_group_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1557
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: fax in /var/www/html/opencart/admin/controller/sale/order.php on line 1567
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1569
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1570
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: reward in /var/www/html/opencart/admin/controller/sale/order.php on line 1583
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: affiliate_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1587
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: affiliate_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1588
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: affiliate_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1590
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: commission in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: forwarded_ip in /var/www/html/opencart/admin/controller/sale/order.php on line 1613
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: accept_language in /var/www/html/opencart/admin/controller/sale/order.php on line 1615
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1618
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1619
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1620
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_company_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1621
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_tax_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1622
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1623
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1624
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1625
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1626
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1627
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1628
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1629
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1630
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1631
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1632
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1633
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1634
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1635
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1636
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1637
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1638
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: shipping_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1639
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 21:08:51 - PHP Notice:  Undefined index: payment_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1919
+2013-10-20 21:08:52 - PHP Notice:  Error: Unknown column 'oh.orders_status' in 'on clause'<br />Error No: 1054<br />SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM oc_order_history oh LEFT JOIN oc_order_status os ON oh.orders_status = os.orders_status WHERE oh.order_id = '8' AND os.language_id = '1' ORDER BY oh.date_added ASC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 21:47:58 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: invoiceNumber in /var/www/html/opencart/admin/model/sale/order.php on line 313
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: comment in /var/www/html/opencart/admin/model/sale/order.php on line 318
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: orders_status_id in /var/www/html/opencart/admin/model/sale/order.php on line 320
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: ip in /var/www/html/opencart/admin/model/sale/order.php on line 321
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: user_agent in /var/www/html/opencart/admin/model/sale/order.php on line 322
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: amazon_order_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1543
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: store_name in /var/www/html/opencart/admin/controller/sale/order.php on line 1544
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: store_url in /var/www/html/opencart/admin/controller/sale/order.php on line 1545
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: customer_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1549
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: customer_group_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1557
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: fax in /var/www/html/opencart/admin/controller/sale/order.php on line 1567
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1569
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_method in /var/www/html/opencart/admin/controller/sale/order.php on line 1570
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1571
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: reward in /var/www/html/opencart/admin/controller/sale/order.php on line 1583
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: affiliate_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1587
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: affiliate_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1588
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: affiliate_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1590
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: commission in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1596
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: forwarded_ip in /var/www/html/opencart/admin/controller/sale/order.php on line 1613
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: accept_language in /var/www/html/opencart/admin/controller/sale/order.php on line 1615
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1618
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1619
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1620
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_company_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1621
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_tax_id in /var/www/html/opencart/admin/controller/sale/order.php on line 1622
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1623
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1624
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1625
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1626
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1627
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1628
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1629
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_firstname in /var/www/html/opencart/admin/controller/sale/order.php on line 1630
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_lastname in /var/www/html/opencart/admin/controller/sale/order.php on line 1631
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_company in /var/www/html/opencart/admin/controller/sale/order.php on line 1632
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_address_1 in /var/www/html/opencart/admin/controller/sale/order.php on line 1633
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_address_2 in /var/www/html/opencart/admin/controller/sale/order.php on line 1634
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_city in /var/www/html/opencart/admin/controller/sale/order.php on line 1635
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_postcode in /var/www/html/opencart/admin/controller/sale/order.php on line 1636
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_zone in /var/www/html/opencart/admin/controller/sale/order.php on line 1637
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_zone_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1638
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: shipping_country in /var/www/html/opencart/admin/controller/sale/order.php on line 1639
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1674
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/sale/order.php on line 1675
+2013-10-20 21:48:01 - PHP Notice:  Undefined index: payment_code in /var/www/html/opencart/admin/controller/sale/order.php on line 1919
+2013-10-20 21:48:02 - PHP Notice:  Error: Unknown column 'oh.orders_status' in 'on clause'<br />Error No: 1054<br />SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM oc_order_history oh LEFT JOIN oc_order_status os ON oh.orders_status = os.orders_status WHERE oh.order_id = '8' AND os.language_id = '1' ORDER BY oh.date_added ASC LIMIT 0,10 in /var/www/html/opencart/system/database/mysql.php on line 50
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: date_added in /var/www/html/opencart/admin/controller/common/home.php on line 184
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_code in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Undefined index: currency_value in /var/www/html/opencart/admin/controller/common/home.php on line 185
+2013-10-20 22:12:53 - PHP Notice:  Error: Unknown column 'order_status_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC in /var/www/html/opencart/system/database/mysql.php on line 50

@@ -1517,7 +1517,6 @@ ul.box-filter > li ul {
 }
 .checkout-content {
 	padding: 0px 0px 15px 0px;
-	display: none;
 	overflow: auto;
 }
 .checkout-content .left {

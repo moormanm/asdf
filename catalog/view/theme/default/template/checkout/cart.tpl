@@ -87,118 +87,15 @@
     </div>
   </form>
   <?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
-  <h2><?php echo $text_next; ?></h2>
-  <div class="content">
-    <p><?php echo $text_next_choice; ?></p>
-    <table class="radio">
-      <?php if ($coupon_status) { ?>
-      <tr class="highlight">
-        <td><?php if ($next == 'coupon') { ?>
-          <input type="radio" name="next" value="coupon" id="use_coupon" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="coupon" id="use_coupon" />
-          <?php } ?></td>
-        <td><label for="use_coupon"><?php echo $text_use_coupon; ?></label></td>
-      </tr>
-      <?php } ?>
-      <?php if ($voucher_status) { ?>
-      <tr class="highlight">
-        <td><?php if ($next == 'voucher') { ?>
-          <input type="radio" name="next" value="voucher" id="use_voucher" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="voucher" id="use_voucher" />
-          <?php } ?></td>
-        <td><label for="use_voucher"><?php echo $text_use_voucher; ?></label></td>
-      </tr>
-      <?php } ?>
-      <?php if ($reward_status) { ?>
-      <tr class="highlight">
-        <td><?php if ($next == 'reward') { ?>
-          <input type="radio" name="next" value="reward" id="use_reward" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="reward" id="use_reward" />
-          <?php } ?></td>
-        <td><label for="use_reward"><?php echo $text_use_reward; ?></label></td>
-      </tr>
-      <?php } ?>
-      <?php if ($shipping_status) { ?>
-      <tr class="highlight">
-        <td><?php if ($next == 'shipping') { ?>
-          <input type="radio" name="next" value="shipping" id="shipping_estimate" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="shipping" id="shipping_estimate" />
-          <?php } ?></td>
-        <td><label for="shipping_estimate"><?php echo $text_shipping_estimate; ?></label></td>
-      </tr>
-      <?php } ?>
-    </table>
-  </div>
   <div class="cart-module">
-    <div id="coupon" class="content" style="display: <?php echo ($next == 'coupon' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <?php echo $entry_coupon; ?>&nbsp;
-        <input type="text" name="coupon" value="<?php echo $coupon; ?>" />
-        <input type="hidden" name="next" value="coupon" />
-        &nbsp;
-        <input type="submit" value="<?php echo $button_coupon; ?>" class="button" />
-      </form>
-    </div>
-    <div id="voucher" class="content" style="display: <?php echo ($next == 'voucher' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <?php echo $entry_voucher; ?>&nbsp;
-        <input type="text" name="voucher" value="<?php echo $voucher; ?>" />
-        <input type="hidden" name="next" value="voucher" />
-        &nbsp;
-        <input type="submit" value="<?php echo $button_voucher; ?>" class="button" />
-      </form>
-    </div>
-    <div id="reward" class="content" style="display: <?php echo ($next == 'reward' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <?php echo $entry_reward; ?>&nbsp;
-        <input type="text" name="reward" value="<?php echo $reward; ?>" />
-        <input type="hidden" name="next" value="reward" />
-        &nbsp;
-        <input type="submit" value="<?php echo $button_reward; ?>" class="button" />
-      </form>
-    </div>
-    <div id="shipping" class="content" style="display: <?php echo ($next == 'shipping' ? 'block' : 'none'); ?>;">
-      <p><?php echo $text_shipping_detail; ?></p>
-      <table>
-        <tr>
-          <td><span class="required">*</span> <?php echo $entry_country; ?></td>
-          <td><select name="country_id">
-              <option value=""><?php echo $text_select; ?></option>
-              <?php foreach ($countries as $country) { ?>
-              <?php if ($country['country_id'] == $country_id) { ?>
-              <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-              <?php } else { ?>
-              <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-              <?php } ?>
-              <?php } ?>
-            </select></td>
-        </tr>
-        <tr>
-          <td><span class="required">*</span> <?php echo $entry_zone; ?></td>
-          <td><select name="zone_id">
-            </select></td>
-        </tr>
-        <tr>
-          <td><span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></td>
-          <td><input type="text" name="postcode" value="<?php echo $postcode; ?>" /></td>
-        </tr>
-      </table>
-      <input type="button" value="<?php echo $button_quote; ?>" id="button-quote" class="button" />
-    </div>
   </div>
   <?php } ?>
   <div class="cart-total">
     <table id="total">
-      <?php foreach ($totals as $total) { ?>
       <tr>
-        <td class="right"><b><?php echo $total['title']; ?>:</b></td>
-        <td class="right"><?php echo $total['text']; ?></td>
+        <td class="right"><b><?php echo $totals[1]['title']; ?>:</b></td>
+        <td class="right"><?php echo $totals[1]['text']; ?></td>
       </tr>
-      <?php } ?>
     </table>
   </div>
   <div class="buttons">

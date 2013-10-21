@@ -58,8 +58,6 @@
       <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
       <?php } ?>
       <div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>
-      <div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
-      <div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
     </div>
     <?php } ?>
   </div>
@@ -76,8 +74,6 @@ function display(view) {
 		$('.product-list > div').each(function(index, element) {
 			html  = '<div class="right">';
 			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
-			html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			html += '  <div class="compare">' + $(element).find('.compare').html() + '</div>';
 			html += '</div>';			
 			
 			html += '<div class="left">';
@@ -139,8 +135,6 @@ function display(view) {
 			}
 						
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
-			html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
 			
 			$(element).html(html);
 		});	
