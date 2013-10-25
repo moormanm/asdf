@@ -1,29 +1,22 @@
 <?php   
 class ControllerCommonHome extends Controller {   
 	public function index() {
-    	$this->language->load('common/home');
-	 
-		$this->document->setTitle($this->language->get('heading_title'));
-		
-    	$this->data['heading_title'] = $this->language->get('heading_title');
-		
+         	$this->language->load('common/home');
+        	$this->document->setTitle($this->language->get('heading_title'));
+         	$this->data['heading_title'] = $this->language->get('heading_title');
 		$this->data['text_overview'] = $this->language->get('text_overview');
 		$this->data['text_statistics'] = $this->language->get('text_statistics');
 		$this->data['text_latest_10_orders'] = $this->language->get('text_latest_10_orders');
 		$this->data['text_total_sale'] = $this->language->get('text_total_sale');
 		$this->data['text_total_sale_year'] = $this->language->get('text_total_sale_year');
 		$this->data['text_total_order'] = $this->language->get('text_total_order');
-		$this->data['text_total_customer'] = $this->language->get('text_total_customer');
 		$this->data['text_total_customer_approval'] = $this->language->get('text_total_customer_approval');
 		$this->data['text_total_review_approval'] = $this->language->get('text_total_review_approval');
-		$this->data['text_total_affiliate'] = $this->language->get('text_total_affiliate');
-		$this->data['text_total_affiliate_approval'] = $this->language->get('text_total_affiliate_approval');
 		$this->data['text_day'] = $this->language->get('text_day');
 		$this->data['text_week'] = $this->language->get('text_week');
 		$this->data['text_month'] = $this->language->get('text_month');
 		$this->data['text_year'] = $this->language->get('text_year');
 		$this->data['text_no_results'] = $this->language->get('text_no_results');
-
 		$this->data['column_order'] = $this->language->get('column_order');
 		$this->data['column_customer'] = $this->language->get('column_customer');
 		$this->data['column_status'] = $this->language->get('column_status');
@@ -35,13 +28,6 @@ class ControllerCommonHome extends Controller {
 		
 		$this->data['entry_range'] = $this->language->get('entry_range');
 		
-		// Check install directory exists
- 		if (is_dir(dirname(DIR_APPLICATION) . '/install')) {
-			$this->data['error_install'] = $this->language->get('error_install');
-		} else {
-			$this->data['error_install'] = '';
-		}
-
 		// Check image directory is writable
 		$file = DIR_IMAGE . 'test';
 		
@@ -143,11 +129,6 @@ class ControllerCommonHome extends Controller {
 		$this->data['total_sale_year'] = $this->currency->format($this->model_sale_order->getTotalSalesByYear(date('Y')), $this->config->get('config_currency'));
 		$this->data['total_order'] = $this->model_sale_order->getTotalOrders();
 		
-		$this->load->model('sale/customer');
-		
-		$this->data['total_customer'] = $this->model_sale_customer->getTotalCustomers();
-		$this->data['total_customer_approval'] = $this->model_sale_customer->getTotalCustomersAwaitingApproval();
-		
 		$this->load->model('catalog/review');
 		
 		$this->data['total_review'] = $this->model_catalog_review->getTotalReviews();
@@ -155,9 +136,6 @@ class ControllerCommonHome extends Controller {
 		
 		$this->load->model('sale/affiliate');
 		
-		$this->data['total_affiliate'] = $this->model_sale_affiliate->getTotalAffiliates();
-		$this->data['total_affiliate_approval'] = $this->model_sale_affiliate->getTotalAffiliatesAwaitingApproval();
-				
 		$this->data['orders'] = array(); 
 		
 		$data = array(
@@ -169,7 +147,7 @@ class ControllerCommonHome extends Controller {
 		
 		$results = $this->model_sale_order->getOrders($data);
     	
-    	foreach ($results as $result) {
+    	        foreach ($results as $result) {
 			$action = array();
 			 
 			$action[] = array(
@@ -208,12 +186,9 @@ class ControllerCommonHome extends Controller {
 		$data = array();
 		
 		$data['order'] = array();
-		$data['customer'] = array();
 		$data['xaxis'] = array();
 		
 		$data['order']['label'] = $this->language->get('text_order');
-		$data['customer']['label'] = $this->language->get('text_customer');
-		
 		if (isset($this->request->get['range'])) {
 			$range = $this->request->get['range'];
 		} else {
@@ -231,14 +206,6 @@ class ControllerCommonHome extends Controller {
 						$data['order']['data'][]  = array($i, 0);
 					}
 					
-					$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '" . (int)$i . "' GROUP BY HOUR(date_added) ORDER BY date_added ASC");
-					
-					if ($query->num_rows) {
-						$data['customer']['data'][] = array($i, (int)$query->row['total']);
-					} else {
-						$data['customer']['data'][] = array($i, 0);
-					}
-			
 					$data['xaxis'][] = array($i, date('H', mktime($i, 0, 0, date('n'), date('j'), date('Y'))));
 				}					
 				break;
@@ -256,14 +223,6 @@ class ControllerCommonHome extends Controller {
 						$data['order']['data'][] = array($i, 0);
 					}
 				
-					$query = $this->db->query("SELECT COUNT(*) AS total FROM `" . DB_PREFIX . "customer` WHERE DATE(date_added) = '" . $this->db->escape($date) . "' GROUP BY DATE(date_added)");
-			
-					if ($query->num_rows) {
-						$data['customer']['data'][] = array($i, (int)$query->row['total']);
-					} else {
-						$data['customer']['data'][] = array($i, 0);
-					}
-		
 					$data['xaxis'][] = array($i, date('D', strtotime($date)));
 				}
 				
@@ -281,13 +240,6 @@ class ControllerCommonHome extends Controller {
 						$data['order']['data'][] = array($i, 0);
 					}	
 				
-					$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "customer WHERE DATE(date_added) = '" . $this->db->escape($date) . "' GROUP BY DAY(date_added)");
-			
-					if ($query->num_rows) {
-						$data['customer']['data'][] = array($i, (int)$query->row['total']);
-					} else {
-						$data['customer']['data'][] = array($i, 0);
-					}	
 					
 					$data['xaxis'][] = array($i, date('j', strtotime($date)));
 				}
@@ -300,14 +252,6 @@ class ControllerCommonHome extends Controller {
 						$data['order']['data'][] = array($i, (int)$query->row['total']);
 					} else {
 						$data['order']['data'][] = array($i, 0);
-					}
-					
-					$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "customer WHERE YEAR(date_added) = '" . date('Y') . "' AND MONTH(date_added) = '" . $i . "' GROUP BY MONTH(date_added)");
-					
-					if ($query->num_rows) { 
-						$data['customer']['data'][] = array($i, (int)$query->row['total']);
-					} else {
-						$data['customer']['data'][] = array($i, 0);
 					}
 					
 					$data['xaxis'][] = array($i, date('M', mktime(0, 0, 0, $i, 1, date('Y'))));
