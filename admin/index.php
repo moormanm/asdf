@@ -7,20 +7,9 @@ if (file_exists('config.php')) {
 	require_once('config.php');
 }  
 
-// Install
-if (!defined('DIR_APPLICATION')) {
-	header('Location: ../install/index.php');
-	exit;
-}
 
 // Startup
 require_once(DIR_SYSTEM . 'startup.php');
-
-// Application Classes
-require_once(DIR_SYSTEM . 'library/currency.php');
-require_once(DIR_SYSTEM . 'library/user.php');
-require_once(DIR_SYSTEM . 'library/weight.php');
-require_once(DIR_SYSTEM . 'library/length.php');
 
 // Registry
 $registry = new Registry();
@@ -130,21 +119,6 @@ $registry->set('document', new Document());
 // Currency
 $registry->set('currency', new Currency($registry));		
 		
-// Weight
-$registry->set('weight', new Weight($registry));
-
-// Length
-$registry->set('length', new Length($registry));
-
-// User
-$registry->set('user', new User($registry));
-
-//OpenBay Pro
-$registry->set('openbay', new Openbay($registry));
-$registry->set('play', new Play($registry));
-$registry->set('ebay', new Ebay($registry));
-$registry->set('amazon', new Amazon($registry));
-$registry->set('amazonus', new Amazonus($registry));
 						
 // Front Controller
 $controller = new Front($registry);
