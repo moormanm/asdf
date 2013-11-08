@@ -46,7 +46,7 @@ final class Loader {
 			$this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
 		} else {
 			trigger_error('Error: Could not load model ' . $model . '!');
-			exit();					
+//			exit();					
 		}
 	}
 	 

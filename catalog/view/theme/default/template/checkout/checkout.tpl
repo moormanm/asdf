@@ -50,10 +50,21 @@
                      <?php } ?></td>
                   </tr>
 
+
+                  <tr> 
+                     <td><span class="required">*</span>Desired Fulfillment Date:</td>
+                     <td><input type="text" name="fulfillmentDate" value="<?php echo $fulfillmentDate?>" size="12" class="date" />
+                     <?php if ($errorFulfillmentDate) { ?>
+                     <span class="error"><?php echo $errorFulfillmentDate; ?></span>
+                     <?php } ?></td>
+ 
+
+                  </tr>
+
                   <tr>
                      <td>Special Instructions:</td>
 
-                     <td><textarea cols="80" rows="5"  name="specialInstructions" ><?php echo $specialInstructions; ?></textarea>
+                     <td><textarea cols="80" rows="5"  name="customerInstructions" ><?php echo $customerInstructions; ?></textarea>
                      </td>
                   </tr>
 
@@ -81,6 +92,7 @@
 
   </div>
   <script>
+    $('.date').datepicker({dateFormat: 'mm-dd-yy', minDate: new Date()});
     $("#confirmArea").load('index.php?route=checkout/confirm', function() {
        $("#confirmArea").width('100%');
     });

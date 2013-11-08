@@ -2,14 +2,11 @@
 {
   public function index ()
   {
-    // Validate cart has products and has stock.
-    if ((!$this->cart->hasProducts ()
-	 && empty ($this->session->data['vouchers']))
-	|| (!$this->cart->hasStock ()
-	    && !$this->config->get ('config_stock_checkout')))
-      {
+    // Validate cart has products
+    if (!$this->cart->hasProducts () )
+    {
 	$this->redirect ($this->url->link ('checkout/cart'));
-      }
+    }
 
     $products = $this->cart->getProducts ();
 
@@ -51,7 +48,7 @@
     $this->data['action'] = $this->url->link ('checkout/checkout', '', 'SSL');
 
     //Initialize values for view
-    $allFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber', 'specialInstructions', 'captcha');
+    $allFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber', 'customerInstructions', 'captcha', 'fulfillmentDate');
     foreach( $allFields as $field) {
       $this->data[$field] = "";
       if( isset( $this->request->post[$field]) ){
@@ -79,20 +76,50 @@
     
     //Generate captcha 
     include("simple-php-captcha/simple-php-captcha.php");
-    $_SESSION['captcha'] = simple_php_captcha();
+    $_SESSION['captcha'] = simple_php_captcha( array('min_length' => 3, 'max_length' => 3));
     $this->data['captchaImg'] = $_SESSION['captcha']['image_src'];
     $this->data['captcha'] = "";
     $this->response->setOutput ($this->render ());
   }
-
+  
+  //Converts m-d-y date into unix time
+  private function dateToEpoch($str) {
+     $p = explode("-", $str);
+     if( count($p) != 3) {
+        return false;
+     }
+   
+     return strtotime( implode( '/', $p) );
+ 
+  }
   private function validateForm() {
      $res = true;
-     $reqFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber');
+     $reqFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber', 'fulfillmentDate');
      foreach( $reqFields as $field) {
         $res = $res & $this->validateBlank($field);
      }
      
      $res = $res & $this->validateCaptcha();
+   
+     //Make sure fulfillment date is today or in the future
+     if( utf8_strlen( $this->request->post['fulfillmentDate'] > 0) ) {
+
+        echo $this->request->post['fulfillmentDate'];
+        
+        $fTime = $this->dateToEpoch( $this->request->post['fulfillmentDate'] );
+        echo $fTime;
+        if($fTime == false) {
+           $this->data['errorFulfillmentDate'] = "Could not parse date";
+           $res = false;
+        }
+   
+        $today = strtotime( date('Y-m-d') );
+        if ( $fTime < $today ) {
+           $this->data['errorFulfillmentDate'] = "Choose a future date, or choose today";
+           $res = false;
+        }
+     }
+     
      return $res;
    }
    
@@ -130,7 +157,42 @@
        $orderdata['lastName'] = $this->data['lastName'];
        $orderdata['firstName'] = $this->data['firstName'];
        $orderdata['reservationNumber'] = $this->data['reservationNumber'];
-       $orderdata['products'] = $this->cart->getProducts();
+       $orderdata['fulfillmentDate'] = strtotime( $this->data['fulfillmentDate'] );
+       $orderdata['customerInstructions'] = substr( $this->data['customerInstructions'], 0, 6000) ;
+
+       $product_data = array();
+       foreach ($this->cart->getProducts() as $product) {
+          $option_data = array();
+          foreach ($product['option'] as $option) {
+              if ($option['type'] != 'file') {
+                 $value = $option['option_value'];        
+              } else {
+                 $value = $this->encryption->decrypt($option['value']);
+              }        
+
+              $option_data[] = array(
+                       'product_option_id' => $option['product_option_id'],
+                       'product_option_value_id' => $option['product_option_value_id'],
+                       'option_id' => $option['option_id'],
+                       'option_value_id' => $option['option_value_id'],  
+                       'name' => $option['name'],
+                       'value' => $value,
+                       'type' => $option['type']
+                       );                                        
+           }
+        
+           $product_data[] = array(
+                                        'product_id' => $product['product_id'],
+                                        'name' => $product['name'],
+                                        'model' => $product['model'],
+					'option'     => $option_data,
+                                        'quantity' => $product['quantity'],
+                                        'price' => $product['price'],
+                                        'total' => $product['total'],
+                                        'tax' => $this->tax->getTax($product['price'], $product['tax_class_id']),
+           );
+       }
+       $orderdata['products'] = $product_data;
        $orderdata['total'] = $this->cart->getTotal();
        return $orderdata;
  

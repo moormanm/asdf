@@ -5,28 +5,15 @@ class ModelLocalisationTaxRate extends Model {
 		
 		$tax_rate_id = $this->db->getLastId();
 		
-		if (isset($data['tax_rate_customer_group'])) {
-			foreach ($data['tax_rate_customer_group'] as $customer_group_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "tax_rate_to_customer_group SET tax_rate_id = '" . (int)$tax_rate_id . "', customer_group_id = '" . (int)$customer_group_id . "'");
-			}
-		}
 	}
 	
 	public function editTaxRate($tax_rate_id, $data) {
 		$this->db->query("UPDATE " . DB_PREFIX . "tax_rate SET name = '" . $this->db->escape($data['name']) . "', rate = '" . (float)$data['rate'] . "', `type` = '" . $this->db->escape($data['type']) . "', geo_zone_id = '" . (int)$data['geo_zone_id'] . "', date_modified = NOW() WHERE tax_rate_id = '" . (int)$tax_rate_id . "'");
 		
-		$this->db->query("DELETE FROM " . DB_PREFIX . "tax_rate_to_customer_group WHERE tax_rate_id = '" . (int)$tax_rate_id . "'");
-		
-		if (isset($data['tax_rate_customer_group'])) {
-			foreach ($data['tax_rate_customer_group'] as $customer_group_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "tax_rate_to_customer_group SET tax_rate_id = '" . (int)$tax_rate_id . "', customer_group_id = '" . (int)$customer_group_id . "'");
-			}
-		}		
 	}
 	
 	public function deleteTaxRate($tax_rate_id) {
 		$this->db->query("DELETE FROM " . DB_PREFIX . "tax_rate WHERE tax_rate_id = '" . (int)$tax_rate_id . "'");
-		$this->db->query("DELETE FROM " . DB_PREFIX . "tax_rate_to_customer_group WHERE tax_rate_id = '" . (int)$tax_rate_id . "'");
 	}
 	
 	public function getTaxRate($tax_rate_id) {
@@ -76,17 +63,6 @@ class ModelLocalisationTaxRate extends Model {
 		return $query->rows;		
 	}
 	
-	public function getTaxRateCustomerGroups($tax_rate_id) {
-		$tax_customer_group_data = array();
-		
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "tax_rate_to_customer_group WHERE tax_rate_id = '" . (int)$tax_rate_id . "'");
-		
-		foreach ($query->rows as $result) {
-			$tax_customer_group_data[] = $result['customer_group_id'];
-		}
-		
-		return $tax_customer_group_data;			
-	}
 				
 	public function getTotalTaxRates() {
       	$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "tax_rate");

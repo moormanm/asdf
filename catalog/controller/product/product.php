@@ -222,8 +222,6 @@ class ControllerProductProduct extends Controller {
 			);			
 			
 			$this->document->setTitle($product_info['name']);
-			$this->document->setDescription($product_info['meta_description']);
-			$this->document->setKeywords($product_info['meta_keyword']);
 			$this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
 			$this->document->addScript('catalog/view/javascript/jquery/tabs.js');
 			$this->document->addScript('catalog/view/javascript/jquery/colorbox/jquery.colorbox-min.js');
@@ -234,13 +232,8 @@ class ControllerProductProduct extends Controller {
 			$this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');
-			$this->data['text_reward'] = $this->language->get('text_reward');
-			$this->data['text_points'] = $this->language->get('text_points');	
-			$this->data['text_discount'] = $this->language->get('text_discount');
-			$this->data['text_stock'] = $this->language->get('text_stock');
 			$this->data['text_price'] = $this->language->get('text_price');
 			$this->data['text_tax'] = $this->language->get('text_tax');
-			$this->data['text_discount'] = $this->language->get('text_discount');
 			$this->data['text_option'] = $this->language->get('text_option');
 			$this->data['text_qty'] = $this->language->get('text_qty');
 			$this->data['text_minimum'] = sprintf($this->language->get('text_minimum'), $product_info['minimum']);
@@ -252,10 +245,6 @@ class ControllerProductProduct extends Controller {
 			$this->data['text_tags'] = $this->language->get('text_tags');
 			
 			$this->data['entry_name'] = $this->language->get('entry_name');
-			$this->data['entry_review'] = $this->language->get('entry_review');
-			$this->data['entry_rating'] = $this->language->get('entry_rating');
-			$this->data['entry_good'] = $this->language->get('entry_good');
-			$this->data['entry_bad'] = $this->language->get('entry_bad');
 			$this->data['entry_captcha'] = $this->language->get('entry_captcha');
 			
 			$this->data['button_cart'] = $this->language->get('button_cart');
@@ -264,27 +253,14 @@ class ControllerProductProduct extends Controller {
 			$this->data['button_upload'] = $this->language->get('button_upload');
 			$this->data['button_continue'] = $this->language->get('button_continue');
 			
-			$this->load->model('catalog/review');
 
 			$this->data['tab_description'] = $this->language->get('tab_description');
 			$this->data['tab_attribute'] = $this->language->get('tab_attribute');
-			$this->data['tab_review'] = sprintf($this->language->get('tab_review'), $product_info['reviews']);
 			$this->data['tab_related'] = $this->language->get('tab_related');
 			
 			$this->data['product_id'] = $this->request->get['product_id'];
-			$this->data['manufacturer'] = $product_info['manufacturer'];
-			$this->data['manufacturers'] = $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']);
 			$this->data['model'] = $product_info['model'];
-			$this->data['reward'] = $product_info['reward'];
-			$this->data['points'] = $product_info['points'];
 			
-			if ($product_info['quantity'] <= 0) {
-				$this->data['stock'] = $product_info['stock_status'];
-			} elseif ($this->config->get('config_stock_display')) {
-				$this->data['stock'] = $product_info['quantity'];
-			} else {
-				$this->data['stock'] = $this->language->get('text_instock');
-			}
 			
 			$this->load->model('tool/image');
 
@@ -317,27 +293,11 @@ class ControllerProductProduct extends Controller {
 				$this->data['price'] = false;
 			}
 						
-			if ((float)$product_info['special']) {
-				$this->data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));
-			} else {
-				$this->data['special'] = false;
-			}
 			
 			if ($this->config->get('config_tax')) {
-				$this->data['tax'] = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price']);
+				$this->data['tax'] = $this->currency->format($product_info['price']);
 			} else {
 				$this->data['tax'] = false;
-			}
-			
-			$discounts = $this->model_catalog_product->getProductDiscounts($this->request->get['product_id']);
-			
-			$this->data['discounts'] = array(); 
-			
-			foreach ($discounts as $discount) {
-				$this->data['discounts'][] = array(
-					'quantity' => $discount['quantity'],
-					'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')))
-				);
 			}
 			
 			$this->data['options'] = array();
@@ -391,9 +351,6 @@ class ControllerProductProduct extends Controller {
 				$this->data['minimum'] = 1;
 			}
 			
-			$this->data['review_status'] = $this->config->get('config_review_status');
-			$this->data['reviews'] = sprintf($this->language->get('text_reviews'), (int)$product_info['reviews']);
-			$this->data['rating'] = (int)$product_info['rating'];
 			$this->data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
 			$this->data['attribute_groups'] = $this->model_catalog_product->getProductAttributes($this->request->get['product_id']);
 			
@@ -414,26 +371,12 @@ class ControllerProductProduct extends Controller {
 					$price = false;
 				}
 						
-				if ((float)$result['special']) {
-					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
-				} else {
-					$special = false;
-				}
-				
-				if ($this->config->get('config_review_status')) {
-					$rating = (int)$result['rating'];
-				} else {
-					$rating = false;
-				}
 							
 				$this->data['products'][] = array(
 					'product_id' => $result['product_id'],
 					'thumb'   	 => $image,
 					'name'    	 => $result['name'],
 					'price'   	 => $price,
-					'special' 	 => $special,
-					'rating'     => $rating,
-					'reviews'    => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
 					'href'    	 => $this->url->link('product/product', 'product_id=' . $result['product_id'])
 				);
 			}	
@@ -451,7 +394,6 @@ class ControllerProductProduct extends Controller {
 				}
 			}
             
-            $this->data['text_payment_profile'] = $this->language->get('text_payment_profile');
             $this->data['profiles'] = $this->model_catalog_product->getProfiles($product_info['product_id']);
 			
 			$this->model_catalog_product->updateViewed($this->request->get['product_id']);
@@ -558,53 +500,6 @@ class ControllerProductProduct extends Controller {
     	}
   	}
 	
-	public function review() {
-    	$this->language->load('product/product');
-		
-		$this->load->model('catalog/review');
-
-		$this->data['text_on'] = $this->language->get('text_on');
-		$this->data['text_no_reviews'] = $this->language->get('text_no_reviews');
-
-		if (isset($this->request->get['page'])) {
-			$page = $this->request->get['page'];
-		} else {
-			$page = 1;
-		}  
-		
-		$this->data['reviews'] = array();
-		
-		$review_total = $this->model_catalog_review->getTotalReviewsByProductId($this->request->get['product_id']);
-			
-		$results = $this->model_catalog_review->getReviewsByProductId($this->request->get['product_id'], ($page - 1) * 5, 5);
-      		
-		foreach ($results as $result) {
-        	$this->data['reviews'][] = array(
-        		'author'     => $result['author'],
-				'text'       => $result['text'],
-				'rating'     => (int)$result['rating'],
-        		'reviews'    => sprintf($this->language->get('text_reviews'), (int)$review_total),
-        		'date_added' => date($this->language->get('date_format_short'), strtotime($result['date_added']))
-        	);
-      	}			
-			
-		$pagination = new Pagination();
-		$pagination->total = $review_total;
-		$pagination->page = $page;
-		$pagination->limit = 5; 
-		$pagination->text = $this->language->get('text_pagination');
-		$pagination->url = $this->url->link('product/product/review', 'product_id=' . $this->request->get['product_id'] . '&page={page}');
-			
-		$this->data['pagination'] = $pagination->render();
-		
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/review.tpl')) {
-			$this->template = $this->config->get('config_template') . '/template/product/review.tpl';
-		} else {
-			$this->template = 'default/template/product/review.tpl';
-		}
-		
-		$this->response->setOutput($this->render());
-	}
 	
     public function getRecurringDescription() {
         $this->language->load('product/product');
@@ -666,40 +561,6 @@ class ControllerProductProduct extends Controller {
         $this->response->setOutput(json_encode($json));	
     }
 
-    public function write() {
-		$this->language->load('product/product');
-		
-		$this->load->model('catalog/review');
-		
-		$json = array();
-		
-		if ($this->request->server['REQUEST_METHOD'] == 'POST') {
-			if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 25)) {
-				$json['error'] = $this->language->get('error_name');
-			}
-			
-			if ((utf8_strlen($this->request->post['text']) < 25) || (utf8_strlen($this->request->post['text']) > 1000)) {
-				$json['error'] = $this->language->get('error_text');
-			}
-	
-			if (empty($this->request->post['rating'])) {
-				$json['error'] = $this->language->get('error_rating');
-			}
-	
-			if (empty($this->session->data['captcha']) || ($this->session->data['captcha'] != $this->request->post['captcha'])) {
-				$json['error'] = $this->language->get('error_captcha');
-			}
-				
-			if (!isset($json['error'])) {
-				$this->model_catalog_review->addReview($this->request->get['product_id'], $this->request->post);
-				
-				$json['success'] = $this->language->get('text_success');
-			}
-		}
-		
-		$this->response->setOutput(json_encode($json));
-	}
-	
 	public function captcha() {
 		$this->load->library('captcha');
 		

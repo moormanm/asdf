@@ -33,14 +33,6 @@
                   <?php } ?></td>
               </tr>
               <tr>
-                <td><?php echo $entry_meta_description; ?></td>
-                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][meta_description]" cols="40" rows="5"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['meta_description'] : ''; ?></textarea></td>
-              </tr>
-              <tr>
-                <td><?php echo $entry_meta_keyword; ?></td>
-                <td><textarea name="product_description[<?php echo $language['language_id']; ?>][meta_keyword]" cols="40" rows="5"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['meta_keyword'] : ''; ?></textarea></td>
-              </tr>
-              <tr>
                 <td><?php echo $entry_description; ?></td>
                 <td><textarea name="product_description[<?php echo $language['language_id']; ?>][description]" id="description<?php echo $language['language_id']; ?>"><?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['description'] : ''; ?></textarea></td>
               </tr>
@@ -62,14 +54,6 @@
                 <?php } ?></td>
             </tr>
             <tr>
-              <td><?php echo $entry_sku; ?></td>
-              <td><input type="text" name="sku" value="<?php echo $sku; ?>" /></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_upc; ?></td>
-              <td><input type="text" name="upc" value="<?php echo $upc; ?>" /></td>
-            </tr>
-            <tr>
                 <td><?php echo $entry_price; ?></td>
                 <td><input type="text" name="price" value="<?php echo $price; ?>" /></td>
             </tr>
@@ -87,19 +71,7 @@
                 </select></td>
             </tr>
             <tr>
-              <td><?php echo $entry_stock_status; ?></td>
-              <td><select name="stock_status_id">
-                  <?php foreach ($stock_statuses as $stock_status) { ?>
-                  <?php if ($stock_status['stock_status_id'] == $stock_status_id) { ?>
-                  <option value="<?php echo $stock_status['stock_status_id']; ?>" selected="selected"><?php echo $stock_status['name']; ?></option>
-                  <?php } else { ?>
-                  <option value="<?php echo $stock_status['stock_status_id']; ?>"><?php echo $stock_status['name']; ?></option>
-                  <?php } ?>
-                  <?php } ?>
-                </select></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_image; ?></td>
+              <td>Thumbnail Image:</td>
               <td><div class="image"><img src="<?php echo $thumb; ?>" alt="" id="thumb" /><br />
                   <input type="hidden" name="image" value="<?php echo $image; ?>" id="image" />
                   <a onclick="image_upload('image', 'thumb');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb').attr('src', '<?php echo $no_image; ?>'); $('#image').attr('value', '');"><?php echo $text_clear; ?></a></div></td>
@@ -124,10 +96,6 @@
         </div>
         <div id="tab-links">
           <table class="form">
-            <tr>
-              <td><?php echo $entry_manufacturer; ?></td>
-              <td><input type="text" name="manufacturer" value="<?php echo $manufacturer ?>" /><input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" /></td>
-            </tr>
             <tr>
               <td><?php echo $entry_category; ?></td>
               <td><input type="text" name="category" value="" /></td>
@@ -858,7 +826,8 @@ function addOptionValue(option_row) {
 
 	option_value_row++;
 }
-<script type="text/javascript"><!--
+
+
 function image_upload(field, thumb) {
 	$('#dialog').remove();
 	
@@ -884,7 +853,7 @@ function image_upload(field, thumb) {
 		modal: false
 	});
 };
-//--></script> 
+</script> 
 <script type="text/javascript"><!--
 var image_row = <?php echo $image_row; ?>;
 

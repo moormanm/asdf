@@ -7,11 +7,9 @@ class Cart {
 
   	public function __construct($registry) {
 		$this->config = $registry->get('config');
-		$this->customer = $registry->get('customer');
 		$this->session = $registry->get('session');
 		$this->db = $registry->get('db');
 		$this->tax = $registry->get('tax');
-		$this->weight = $registry->get('weight');
 
 		if (!isset($this->session->data['cart']) || !is_array($this->session->data['cart'])) {
       		$this->session->data['cart'] = array();
@@ -32,14 +30,6 @@ class Cart {
 					$options = array();
 				} 
                 
-                // Profile
-                
-                if (!empty($product[2])) {
-                    $profile_id = $product[2];
-                } else {
-                    $profile_id = 0;
-                }
-				
 				$product_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product p LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) WHERE p.product_id = '" . (int)$product_id . "' AND pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.date_available <= NOW() AND p.status = '1'");
 				
 				if ($product_query->num_rows) {
@@ -165,66 +155,10 @@ class Cart {
 						}
 					} 
 				
-					if ($this->customer->isLogged()) {
-						$customer_group_id = $this->customer->getCustomerGroupId();
-					} else {
-						$customer_group_id = $this->config->get('config_customer_group_id');
-					}
 					
 					$price = $product_query->row['price'];
 					
-					// Product Discounts
-					$discount_quantity = 0;
 					
-					foreach ($this->session->data['cart'] as $key_2 => $quantity_2) {
-						$product_2 = explode(':', $key_2);
-						
-						if ($product_2[0] == $product_id) {
-							$discount_quantity += $quantity_2;
-						}
-					}
-					
-					$product_discount_query = $this->db->query("SELECT price FROM " . DB_PREFIX . "product_discount WHERE product_id = '" . (int)$product_id . "' AND customer_group_id = '" . (int)$customer_group_id . "' AND quantity <= '" . (int)$discount_quantity . "' AND ((date_start = '0000-00-00' OR date_start < NOW()) AND (date_end = '0000-00-00' OR date_end > NOW())) ORDER BY quantity DESC, priority ASC, price ASC LIMIT 1");
-					
-					if ($product_discount_query->num_rows) {
-						$price = $product_discount_query->row['price'];
-					}
-					
-					// Product Specials
-					$product_special_query = $this->db->query("SELECT price FROM " . DB_PREFIX . "product_special WHERE product_id = '" . (int)$product_id . "' AND customer_group_id = '" . (int)$customer_group_id . "' AND ((date_start = '0000-00-00' OR date_start < NOW()) AND (date_end = '0000-00-00' OR date_end > NOW())) ORDER BY priority ASC, price ASC LIMIT 1");
-				
-					if ($product_special_query->num_rows) {
-						$price = $product_special_query->row['price'];
-					}						
-			
-					// Reward Points
-					$product_reward_query = $this->db->query("SELECT points FROM " . DB_PREFIX . "product_reward WHERE product_id = '" . (int)$product_id . "' AND customer_group_id = '" . (int)$customer_group_id . "'");
-					
-					if ($product_reward_query->num_rows) {	
-						$reward = $product_reward_query->row['points'];
-					} else {
-						$reward = 0;
-					}
-					
-					// Downloads		
-					$download_data = array();     		
-					
-					$download_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_to_download p2d LEFT JOIN " . DB_PREFIX . "download d ON (p2d.download_id = d.download_id) LEFT JOIN " . DB_PREFIX . "download_description dd ON (d.download_id = dd.download_id) WHERE p2d.product_id = '" . (int)$product_id . "' AND dd.language_id = '" . (int)$this->config->get('config_language_id') . "'");
-				
-					foreach ($download_query->rows as $download) {
-						$download_data[] = array(
-							'download_id' => $download['download_id'],
-							'name'        => $download['name'],
-							'filename'    => $download['filename'],
-							'mask'        => $download['mask'],
-							'remaining'   => $download['remaining']
-						);
-					}
-					
-					// Stock
-					if (!$product_query->row['quantity'] || ($product_query->row['quantity'] < $quantity)) {
-						$stock = false;
-					}
                     
                     $recurring = false;
                     $recurring_frequency = 0;
@@ -236,63 +170,20 @@ class Cart {
                     $recurring_trial_cycle = 0;
                     $recurring_trial_duration = 0;
                     $recurring_trial_frequency = 0;
-                    $profile_name = '';
                     
-                    if ($profile_id) {
-                        $profile_info = $this->db->query("SELECT * FROM `" . DB_PREFIX . "profile` `p` JOIN `" . DB_PREFIX . "product_profile` `pp` ON `pp`.`profile_id` = `p`.`profile_id` AND `pp`.`product_id` = " . (int) $product_query->row['product_id'] . " JOIN `" . DB_PREFIX . "profile_description` `pd` ON `pd`.`profile_id` = `p`.`profile_id` AND `pd`.`language_id` = " . (int) $this->config->get('config_language_id') . " WHERE `pp`.`profile_id` = " . (int) $profile_id . " AND `status` = 1 AND `pp`.`customer_group_id` = " . (int) $customer_group_id)->row;
-                        
-                        if ($profile_info) {
-                            $profile_name = $profile_info['name'];
-                            
-                            $recurring = true;
-                            $recurring_frequency = $profile_info['frequency'];
-                            $recurring_price = $profile_info['price'];
-                            $recurring_cycle = $profile_info['cycle'];
-                            $recurring_duration = $profile_info['duration'];
-                            $recurring_trial_frequency = $profile_info['trial_frequency'];
-                            $recurring_trial_status = $profile_info['trial_status'];
-                            $recurring_trial_price = $profile_info['trial_price'];
-                            $recurring_trial_cycle = $profile_info['trial_cycle'];
-                            $recurring_trial_duration = $profile_info['trial_duration'];
-                        }
-                    }
-				        $quantity = 1;	
 					$this->data[$key] = array(
 						'key'                       => $key,
 						'product_id'                => $product_query->row['product_id'],
 						'name'                      => $product_query->row['name'],
 						'model'                     => $product_query->row['model'],
-						'shipping'                  => $product_query->row['shipping'],
 						'image'                     => $product_query->row['image'],
 						'option'                    => $option_data,
-						'download'                  => $download_data,
 						'quantity'                  => $quantity,
 						'minimum'                   => $product_query->row['minimum'],
 						'subtract'                  => $product_query->row['subtract'],
-						'stock'                     => $stock,
 						'price'                     => ($price + $option_price),
 						'total'                     => ($price + $option_price) * $quantity,
-						'reward'                    => $reward * $quantity,
-						'points'                    => ($product_query->row['points'] ? ($product_query->row['points'] + $option_points) * $quantity : 0),
 						'tax_class_id'              => $product_query->row['tax_class_id'],
-						'weight'                    => ($product_query->row['weight'] + $option_weight) * $quantity,
-						'weight_class_id'           => $product_query->row['weight_class_id'],
-						'length'                    => $product_query->row['length'],
-						'width'                     => $product_query->row['width'],
-						'height'                    => $product_query->row['height'],
-						'length_class_id'           => $product_query->row['length_class_id'],
-                        'profile_id'                => $profile_id,
-                        'profile_name'              => $profile_name,
-                        'recurring'                 => $recurring,
-                        'recurring_frequency'       => $recurring_frequency,
-                        'recurring_price'           => $recurring_price,
-                        'recurring_cycle'           => $recurring_cycle,
-                        'recurring_duration'        => $recurring_duration,
-                        'recurring_trial'           => $recurring_trial_status,
-                        'recurring_trial_frequency' => $recurring_trial_frequency,
-                        'recurring_trial_price'     => $recurring_trial_price,
-                        'recurring_trial_cycle'     => $recurring_trial_cycle,
-                        'recurring_trial_duration'  => $recurring_trial_duration,
 					);
 				} else {
 					$this->remove($key);
@@ -315,7 +206,7 @@ class Cart {
         return $recurring_products;
     }
 		  
-  	public function add($product_id, $qty = 1, $option, $profile_id) {
+  	public function add($product_id, $qty = 1, $option) {
         $key = (int) $product_id . ':';
         
         if ($option) {
@@ -324,9 +215,6 @@ class Cart {
             $key .= ':';
         }
         
-        if ($profile_id) {
-            $key .= (int) $profile_id;
-        }
 
         if ((int) $qty && ((int) $qty > 0)) {
             if (!isset($this->session->data['cart'][$key])) {
@@ -430,48 +318,13 @@ class Cart {
     	return count($this->session->data['cart']);
   	}
 
-    public function hasRecurringProducts(){
-        return count($this->getRecurringProducts());
-    }
+        public function hasRecurringProducts(){
+            return count($this->getRecurringProducts());
+        }
   
   	public function hasStock() {
-		$stock = true;
-		
-		foreach ($this->getProducts() as $product) {
-			if (!$product['stock']) {
-	    		$stock = false;
-			}
-		}
-		
-    	return $stock;
+         	return true;
   	}
   
-  	public function hasShipping() {
-		$shipping = false;
-		
-		foreach ($this->getProducts() as $product) {
-	  		if ($product['shipping']) {
-	    		$shipping = true;
-				
-				break;
-	  		}		
-		}
-		
-		return $shipping;
-	}
-	
-  	public function hasDownload() {
-		$download = false;
-		
-		foreach ($this->getProducts() as $product) {
-	  		if ($product['download']) {
-	    		$download = true;
-				
-				break;
-	  		}		
-		}
-		
-		return $download;
-	}	
 }
 ?>

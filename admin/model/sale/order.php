@@ -5,11 +5,16 @@ class ModelSaleOrder extends Model {
 	}
 
 	public function getOrder($order_id) {
-           return ShopciergeOrder::getOrder($id, $this->db);
+           return ShopciergeOrder::getOrder($order_id, $this->db);
 	}
+
 	
+        public function updateOrderStatus($id, $statusId) {
+           return ShopciergeOrder::updateOrderStatus($id, $statusId, $this->db);
+        }
+
 	public function getOrders($data = array()) {
-		$sql = "SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM " . DB_PREFIX . "order_status os WHERE os.order_status_id = o.order_status_id) AS status, o.total, o.currency_code, o.currency_value, o.date_added, o.date_modified FROM `" . DB_PREFIX . "order` o";
+		$sql = "SELECT o.order_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, (SELECT os.name FROM " . DB_PREFIX . "order_status os WHERE os.order_status_id = o.order_status_id) AS status, o.total,  o.datePurchased  FROM `" . DB_PREFIX . "order` o";
 
 		if (isset($data['filter_order_status_id']) && !is_null($data['filter_order_status_id'])) {
 			$sql .= " WHERE o.order_status_id = '" . (int)$data['filter_order_status_id'] . "'";
@@ -26,12 +31,9 @@ class ModelSaleOrder extends Model {
 		}
 
 		if (!empty($data['filter_date_added'])) {
-			$sql .= " AND DATE(o.date_added) = DATE('" . $this->db->escape($data['filter_date_added']) . "')";
+			$sql .= " AND DATE(o.datePurchased) = DATE('" . $this->db->escape($data['filter_date_added']) . "')";
 		}
 		
-		if (!empty($data['filter_date_modified'])) {
-			$sql .= " AND DATE(o.date_modified) = DATE('" . $this->db->escape($data['filter_date_modified']) . "')";
-		}
 		
 		if (!empty($data['filter_total'])) {
 			$sql .= " AND o.total = '" . (float)$data['filter_total'] . "'";
@@ -42,7 +44,6 @@ class ModelSaleOrder extends Model {
 			'customer',
 			'status',
 			'o.date_added',
-			'o.date_modified',
 			'o.total'
 		);
 
@@ -117,12 +118,9 @@ class ModelSaleOrder extends Model {
 		}
 
 		if (!empty($data['filter_date_added'])) {
-			$sql .= " AND DATE(date_added) = DATE('" . $this->db->escape($data['filter_date_added']) . "')";
+			$sql .= " AND DATE(datePurchased) = DATE('" . $this->db->escape($data['filter_date_added']) . "')";
 		}
 		
-		if (!empty($data['filter_date_modified'])) {
-			$sql .= " AND DATE(o.date_modified) = DATE('" . $this->db->escape($data['filter_date_modified']) . "')";
-		}
 		
 		if (!empty($data['filter_total'])) {
 			$sql .= " AND total = '" . (float)$data['filter_total'] . "'";
@@ -146,7 +144,7 @@ class ModelSaleOrder extends Model {
 	}
 
 	public function getTotalSalesByYear($year) {
-         	$query = $this->db->query("SELECT SUM(total) AS total FROM `" . DB_PREFIX . "order` WHERE order_status_id > '0' AND YEAR(date_added) = '" . (int)$year . "'");
+         	$query = $this->db->query("SELECT SUM(total) AS total FROM `" . DB_PREFIX . "order` WHERE order_status_id > '0' AND YEAR(datePurchased) = '" . (int)$year . "'");
 
 		return $query->row['total'];
 	}
@@ -169,63 +167,5 @@ class ModelSaleOrder extends Model {
 		}
 	}
 	
-	public function addOrderHistory($order_id, $data) {
-		$this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$data['order_status_id'] . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
-
-		$this->db->query("INSERT INTO " . DB_PREFIX . "order_history SET order_id = '" . (int)$order_id . "', order_status_id = '" . (int)$data['order_status_id'] . "', notify = '" . (isset($data['notify']) ? (int)$data['notify'] : 0) . "', comment = '" . $this->db->escape(strip_tags($data['comment'])) . "', date_added = NOW()");
-
-		$order_info = $this->getOrder($order_id);
-
-	}
-		
-	public function getOrderHistories($order_id, $start = 0, $limit = 10) {
-		if ($start < 0) {
-			$start = 0;
-		}
-		
-		if ($limit < 1) {
-			$limit = 10;
-		}	
-				
-		$query = $this->db->query("SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM " . DB_PREFIX . "order_history oh LEFT JOIN " . DB_PREFIX . "order_status os ON oh.order_status_id = os.order_status_id WHERE oh.order_id = '" . (int)$order_id . "' AND os.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY oh.date_added ASC LIMIT " . (int)$start . "," . (int)$limit);
-
-		return $query->rows;
-	}
-	
-	public function getTotalOrderHistories($order_id) {
-	  	$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "order_history WHERE order_id = '" . (int)$order_id . "'");
-
-		return $query->row['total'];
-	}	
-		
-	public function getTotalOrderHistoriesByOrderStatusId($order_status_id) {
-	  	$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "order_history WHERE order_status_id = '" . (int)$order_status_id . "'");
-
-		return $query->row['total'];
-	}	
-	
-	public function getEmailsByProductsOrdered($products, $start, $end) {
-		$implode = array();
-		
-		foreach ($products as $product_id) {
-			$implode[] = "op.product_id = '" . $product_id . "'";
-		}
-		
-		$query = $this->db->query("SELECT DISTINCT email FROM `" . DB_PREFIX . "order` o LEFT JOIN " . DB_PREFIX . "order_product op ON (o.order_id = op.order_id) WHERE (" . implode(" OR ", $implode) . ") AND o.order_status_id <> '0'");
-	
-		return $query->rows;
-	}
-	
-	public function getTotalEmailsByProductsOrdered($products) {
-		$implode = array();
-		
-		foreach ($products as $product_id) {
-			$implode[] = "op.product_id = '" . $product_id . "'";
-		}
-				
-		$query = $this->db->query("SELECT DISTINCT email FROM `" . DB_PREFIX . "order` o LEFT JOIN " . DB_PREFIX . "order_product op ON (o.order_id = op.order_id) WHERE (" . implode(" OR ", $implode) . ") AND o.order_status_id <> '0' LIMIT " . $start . "," . $end);	
-		
-		return $query->row['total'];
-	}	
 }
 ?>

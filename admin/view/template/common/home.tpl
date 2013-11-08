@@ -5,9 +5,6 @@
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <?php if ($error_install) { ?>
-  <div class="warning"><?php echo $error_install; ?></div>
-  <?php } ?>
   <?php if ($error_image) { ?>
   <div class="warning"><?php echo $error_image; ?></div>
   <?php } ?>
@@ -44,14 +41,6 @@
               <td><?php echo $text_total_order; ?></td>
               <td><?php echo $total_order; ?></td>
             </tr>
-            <tr>
-              <td><?php echo $text_total_customer_approval; ?></td>
-              <td><?php echo $total_customer_approval; ?></td>
-            </tr>
-            <tr>
-              <td><?php echo $text_total_review_approval; ?></td>
-              <td><?php echo $total_review_approval; ?></td>
-            </tr>
           </table>
         </div>
       </div>
@@ -78,7 +67,7 @@
                 <td class="right"><?php echo $column_order; ?></td>
                 <td class="left"><?php echo $column_customer; ?></td>
                 <td class="left"><?php echo $column_status; ?></td>
-                <td class="left"><?php echo $column_date_added; ?></td>
+                <td class="left"><?php echo "Time Ordered" ?></td>
                 <td class="right"><?php echo $column_total; ?></td>
                 <td class="right"><?php echo $column_action; ?></td>
               </tr>
@@ -90,7 +79,7 @@
                 <td class="right"><?php echo $order['order_id']; ?></td>
                 <td class="left"><?php echo $order['customer']; ?></td>
                 <td class="left"><?php echo $order['status']; ?></td>
-                <td class="left"><?php echo $order['date_added']; ?></td>
+                <td class="left"><?php echo $order['datePurchased']; ?></td>
                 <td class="right"><?php echo $order['total']; ?></td>
                 <td class="right"><?php foreach ($order['action'] as $action) { ?>
                   [ <a href="<?php echo $action['href']; ?>"><?php echo $action['text']; ?></a> ]
@@ -136,7 +125,7 @@ function getSalesChart(range) {
 				}
 			}
 
-			$.plot($('#report'), [json.order, json.customer], option);
+			$.plot($('#report'), [json.order], option);
 		}
 	});
 }

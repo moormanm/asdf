@@ -110,8 +110,6 @@ class ControllerModuleCart extends Controller {
 				'price'     => $price,	
 				'total'     => $total,	
 				'href'      => $this->url->link('product/product', 'product_id=' . $product['product_id']),
-                'recurring' => $product['recurring'],
-                'profile'   => $product['profile_name'],
 			);
 		}
 		

@@ -61,13 +61,11 @@ class ControllerCheckoutConfirm extends Controller {
 					'model'      => $product['model'],
 					'href'      =>   $this->url->link('product/product', 'product_id=' . $product['product_id']),
 					'option'     => $option_data,
-					'download'   => $product['download'],
 					'quantity'   => $product['quantity'],
 					'subtract'   => $product['subtract'],
-					'price'      => $product['price'],
-					'total'      => $product['total'],
+					'price'      => $this->currency->format($product['price']),
+					'total'      => $this->currency->format($product['total']),
 					'tax'        => $this->tax->getTax($product['price'], $product['tax_class_id']),
-					'reward'     => $product['reward']
 				); 
 		}
 			

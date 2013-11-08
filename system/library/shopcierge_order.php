@@ -1,5 +1,10 @@
 <?php
 class ShopciergeOrder {
+   public static function updateOrderStatus($id, $statusId, $db) {
+       $db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" .  $statusId . "'" .
+                  " WHERE order_id = '" . $id . "'");
+
+   }
 
    public static function addOrder($data, $db) {
         $db->query("INSERT INTO `" . DB_PREFIX . "order` 
@@ -10,8 +15,9 @@ class ShopciergeOrder {
                 ",  lastName = '" . $data['lastName'] . "'" .
                 ",  firstName = '" . $data['firstName'] . "'" .
                 ",  reservationNumber = '" . $data['reservationNumber'] . "'" .
-                ",  total = ' " . (float)$data['total'] . "'" .
-                ",  orders_status = '0'");
+                ",  fulfillmentDate = '" . date('Y-m-d', $data['fulfillmentDate']) . "'" .
+                ",  customerInstructions = '"  . $data['customerInstructions'] . "'" .
+                ",  total = ' " . (float)$data['total'] . "'");
         $order_id = $db->getLastId();
 
         foreach ($data['products'] as $product) {
@@ -42,18 +48,21 @@ class ShopciergeOrder {
 
 
    public static function getOrder($id, $db) { 
-        $data = $this->db->query("SELECT * FROM `" . DB_PREFIX . "order` o WHERE o.order_id = '" . (int)$id . "'");
+        $data = $db->query("SELECT * FROM `" . DB_PREFIX . "order` o WHERE o.order_id = '" . (int)$id . "'");
          if ($data->num_rows) {
             return array(
-                'contactNumber'      =>  $data['contactNumber'],
-                'email'              =>  $data['email'],
-                'ipAddress'          =>  $data['ipAddress'],
-                'datePurchased'      =>  $data['datePurchased'],
-                'lastName'           =>  $data['lastName'],
-                'firstName'          =>  $data['firstName'],
-                'reservationNumber'  =>  $data['reservationNumber'],
-                'total'              =>  (float)$data['total'],
-                'order_status'       =>  $data['order_status'] 
+                'contactNumber'      =>  $data->row['contactNumber'],
+                'email'              =>  $data->row['email'],
+                'ipAddress'          =>  $data->row['ipAddress'],
+                'datePurchased'      =>  $data->row['datePurchased'],
+                'fulfillmentDate'      =>  $data->row['fulfillmentDate'],
+                'lastName'           =>  $data->row['lastName'],
+                'customerInstructions'  =>  $data->row['customerInstructions'],
+                'firstName'          =>  $data->row['firstName'],
+                'reservationNumber'  =>  $data->row['reservationNumber'],
+                'total'              =>  (float)$data->row['total'],
+                'order_status'       =>  $data->row['order_status_id'],
+                'ip'       =>  "127.0.0.1" 
              );
          }
          

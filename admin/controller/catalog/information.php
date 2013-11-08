@@ -452,7 +452,6 @@ class ControllerCatalogInformation extends Controller {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
-		$this->load->model('setting/store');
 		
 		foreach ($this->request->post['selected'] as $information_id) {
 			if ($this->config->get('config_account_id') == $information_id) {
@@ -467,11 +466,6 @@ class ControllerCatalogInformation extends Controller {
 				$this->error['warning'] = $this->language->get('error_affiliate');
 			}
 						
-			$store_total = $this->model_setting_store->getTotalStoresByInformationId($information_id);
-
-			if ($store_total) {
-				$this->error['warning'] = sprintf($this->language->get('error_store'), $store_total);
-			}
 		}
 
 		if (!$this->error) {
