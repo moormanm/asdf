@@ -10,7 +10,10 @@
       <h1><img src="view/image/order.png" alt="" /> <?php echo $heading_title; ?></h1>
 
       <div class="buttons">
-            <a href="<?php echo $delete ?>" target="_blank" class="button">Delete Order</a>
+            <form method='post' action="<?php echo $delete; ?>" id="postDelete">
+               <input type='hidden' name='order_id' value="<?php echo $order_id;?>">
+            </form>
+            <a onclick ="document.getElementById('postDelete').submit()" target="_blank" class="button">Delete Order</a>
             <a href="<?php echo $invoice; ?>" target="_blank" class="button"><?php echo $button_invoice; ?></a>
             <a href="<?php echo $cancel; ?>" class="button">Go Back</a>
 
@@ -71,6 +74,11 @@
             <td>Date Added:</td>
             <td><?php echo $datePurchased;?></td>
           </tr>
+          <tr>
+            <td>Fulfillment Date:</td>
+            <td><?php echo $fulfillmentDate;?></td>
+          </tr>
+
         </table>
         <p>Products Ordered:</p>
         <table class="list">

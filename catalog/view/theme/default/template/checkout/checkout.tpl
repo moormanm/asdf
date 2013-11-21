@@ -34,6 +34,18 @@
                      <?php } ?></td>
                   </tr>
 
+
+
+                  <tr>
+                     <td><span class="required">*</span>Email:</td>
+                     <td><input type="text" name="email" value="<?php echo $email; ?>" />
+                     <?php if ($errorEmail) { ?>
+                     <span class="error"><?php echo $errorEmail; ?></span>
+                     <?php } ?></td>
+                  </tr>
+
+
+
                   <tr>
                      <td><span class="required">*</span>Contact Number:</td>
                      <td><input type="text" name="contactNumber" value="<?php echo $contactNumber; ?>" />

@@ -1,0 +1,1 @@
+a:5:{i:0;a:2:{s:15:"order_status_id";s:1:"7";s:4:"name";s:8:"Canceled";}i:1;a:2:{s:15:"order_status_id";s:2:"18";s:4:"name";s:9:"Fulfilled";}i:2;a:2:{s:15:"order_status_id";s:2:"17";s:4:"name";s:8:"In Stock";}i:3;a:2:{s:15:"order_status_id";s:1:"1";s:4:"name";s:3:"New";}i:4;a:2:{s:15:"order_status_id";s:1:"5";s:4:"name";s:4:"Paid";}}

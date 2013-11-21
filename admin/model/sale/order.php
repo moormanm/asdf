@@ -8,6 +8,11 @@ class ModelSaleOrder extends Model {
            return ShopciergeOrder::getOrder($order_id, $this->db);
 	}
 
+	public function deleteOrder($order_id) {
+           $sql = "DELETE FROM " . DB_PREFIX . "order WHERE order_id = ' " . $order_id . "'";
+           $query = $this->db->query($sql);
+	}
+
 	
         public function updateOrderStatus($id, $statusId) {
            return ShopciergeOrder::updateOrderStatus($id, $statusId, $this->db);

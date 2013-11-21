@@ -356,9 +356,7 @@ class ControllerCatalogInformation extends Controller {
 			$this->data['information_description'] = array();
 		}
 
-		$this->load->model('setting/store');
 		
-		$this->data['stores'] = $this->model_setting_store->getStores();
 		
 		if (isset($this->request->post['information_store'])) {
 			$this->data['information_store'] = $this->request->post['information_store'];

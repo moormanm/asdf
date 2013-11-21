@@ -15,58 +15,30 @@
       <td><?php echo $order['store_name']; ?><br />
         <?php echo $order['store_address']; ?><br />
         <?php echo $text_telephone; ?> <?php echo $order['store_telephone']; ?><br />
-        <?php if ($order['store_fax']) { ?>
-        <?php echo $text_fax; ?> <?php echo $order['store_fax']; ?><br />
-        <?php } ?>
         <?php echo $order['store_email']; ?><br />
         <?php echo $order['store_url']; ?></td>
       <td align="right" valign="top"><table>
           <tr>
-            <td><b><?php echo $text_date_added; ?></b></td>
-            <td><?php echo $order['date_added']; ?></td>
+            <td><b>Fulfillment Date</b></td>
+            <td><?php echo $order['fulfillmentDate']; ?></td>
           </tr>
-          <?php if ($order['invoice_no']) { ?>
-          <tr>
-            <td><b><?php echo $text_invoice_no; ?></b></td>
-            <td><?php echo $order['invoice_no']; ?></td>
-          </tr>
-          <?php } ?>
           <tr>
             <td><b><?php echo $text_order_id; ?></b></td>
             <td><?php echo $order['order_id']; ?></td>
           </tr>
-          <tr>
-            <td><b><?php echo $text_payment_method; ?></b></td>
-            <td><?php echo $order['payment_method']; ?></td>
-          </tr>
-          <?php if ($order['shipping_method']) { ?>
-          <tr>
-            <td><b><?php echo $text_shipping_method; ?></b></td>
-            <td><?php echo $order['shipping_method']; ?></td>
-          </tr>
-          <?php } ?>
         </table></td>
     </tr>
   </table>
   <table class="address">
     <tr class="heading">
-      <td width="50%"><b><?php echo $text_to; ?></b></td>
-      <td width="50%"><b><?php echo $text_ship_to; ?></b></td>
+      <td width="100%"><b><?php echo $text_to; ?></b></td>
     </tr>
     <tr>
-      <td><?php echo $order['payment_address']; ?><br/>
+      <td><?php echo $order['firstName']; echo " "; echo  $order['lastName'] ?><br/>
         <?php echo $order['email']; ?><br/>
-        <?php echo $order['telephone']; ?>
-        <?php if ($order['payment_company_id']) { ?>
+        <?php echo $order['contactNumber']; ?>
         <br/>
         <br/>
-        <?php echo $text_company_id; ?> <?php echo $order['payment_company_id']; ?>
-        <?php } ?>
-        <?php if ($order['payment_tax_id']) { ?>
-        <br/>
-        <?php echo $text_tax_id; ?> <?php echo $order['payment_tax_id']; ?>
-        <?php } ?></td>
-      <td><?php echo $order['shipping_address']; ?></td>
     </tr>
   </table>
   <table class="product">
@@ -90,15 +62,6 @@
       <td align="right"><?php echo $product['total']; ?></td>
     </tr>
     <?php } ?>
-    <?php foreach ($order['voucher'] as $voucher) { ?>
-    <tr>
-      <td align="left"><?php echo $voucher['description']; ?></td>
-      <td align="left"></td>
-      <td align="right">1</td>
-      <td align="right"><?php echo $voucher['amount']; ?></td>
-      <td align="right"><?php echo $voucher['amount']; ?></td>
-    </tr>
-    <?php } ?>
     <?php foreach ($order['total'] as $total) { ?>
     <tr>
       <td align="right" colspan="4"><b><?php echo $total['title']; ?>:</b></td>
@@ -106,16 +69,6 @@
     </tr>
     <?php } ?>
   </table>
-  <?php if ($order['comment']) { ?>
-  <table class="comment">
-    <tr class="heading">
-      <td><b><?php echo $column_comment; ?></b></td>
-    </tr>
-    <tr>
-      <td><?php echo $order['comment']; ?></td>
-    </tr>
-  </table>
-  <?php } ?>
 </div>
 <?php } ?>
 </body>

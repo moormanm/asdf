@@ -48,7 +48,7 @@
     $this->data['action'] = $this->url->link ('checkout/checkout', '', 'SSL');
 
     //Initialize values for view
-    $allFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber', 'customerInstructions', 'captcha', 'fulfillmentDate');
+    $allFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber', 'customerInstructions', 'captcha', 'fulfillmentDate', 'email');
     foreach( $allFields as $field) {
       $this->data[$field] = "";
       if( isset( $this->request->post[$field]) ){
@@ -94,7 +94,7 @@
   }
   private function validateForm() {
      $res = true;
-     $reqFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber', 'fulfillmentDate');
+     $reqFields = array('firstName', 'lastName', 'contactNumber', 'reservationNumber', 'fulfillmentDate', 'email');
      foreach( $reqFields as $field) {
         $res = $res & $this->validateBlank($field);
      }
@@ -104,10 +104,8 @@
      //Make sure fulfillment date is today or in the future
      if( utf8_strlen( $this->request->post['fulfillmentDate'] > 0) ) {
 
-        echo $this->request->post['fulfillmentDate'];
         
         $fTime = $this->dateToEpoch( $this->request->post['fulfillmentDate'] );
-        echo $fTime;
         if($fTime == false) {
            $this->data['errorFulfillmentDate'] = "Could not parse date";
            $res = false;
@@ -150,14 +148,14 @@
    
    private function prepareOrderData() {
        $orderdata = array();
-       //$orderdata['email'] = $this->data['email'];
-       $orderdata['email'] = "michael.e.moorman@gmail.com";
+       $orderdata['email'] = $this->data['email'];
        $orderdata['contactNumber'] = $this->data['contactNumber'];
        $orderdata['ipAddress'] = $_SERVER["REMOTE_ADDR"];
        $orderdata['lastName'] = $this->data['lastName'];
        $orderdata['firstName'] = $this->data['firstName'];
        $orderdata['reservationNumber'] = $this->data['reservationNumber'];
-       $orderdata['fulfillmentDate'] = strtotime( $this->data['fulfillmentDate'] );
+       $orderdata['fulfillmentDate'] = $this->dateToEpoch( $this->data['fulfillmentDate'] );
+       echo $orderdata['fulfillmentDate'] ;
        $orderdata['customerInstructions'] = substr( $this->data['customerInstructions'], 0, 6000) ;
 
        $product_data = array();

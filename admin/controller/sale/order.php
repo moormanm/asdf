@@ -3,7 +3,7 @@ class ControllerSaleOrder extends Controller {
 	private $error = array();
 
   	public function index() {
-		$this->document->setTitle($this->language->get('heading_title'));
+		$this->document->setTitle("Orders");
          	$this->getList();
   	}
 	
@@ -49,9 +49,9 @@ class ControllerSaleOrder extends Controller {
 		if ($order_info) {
 			$this->language->load('sale/order');
 
-			$this->document->setTitle($this->language->get('heading_title'));
+			$this->document->setTitle("Orders");
 
-			$this->data['heading_title'] = $this->language->get('heading_title');
+			$this->data['heading_title'] = "Order Information";
 			
                         $this->data['text_name'] = $this->language->get('text_name');
 			$this->data['text_order_id'] = $this->language->get('text_order_id');
@@ -124,7 +124,7 @@ class ControllerSaleOrder extends Controller {
 			);
 
 			$this->data['breadcrumbs'][] = array(
-				'text'      => $this->language->get('heading_title'),
+				'text'      => $this->language->get('Order Information'),
 				'href'      => $this->url->link('sale/order', 'token=' . $this->session->data['token'] . $url, 'SSL'),				
 				'separator' => ' :: '
 			);
@@ -155,6 +155,7 @@ class ControllerSaleOrder extends Controller {
 			}
 
 			$this->data['ip'] = $order_info['ip'];
+			$this->data['fulfillmentDate'] = date($this->language->get('date_format_short'), strtotime($order_info['fulfillmentDate']));
 			$this->data['datePurchased'] = date($this->language->get('date_format_short'), strtotime($order_info['datePurchased']));
 			$this->data['products'] = array();
 
@@ -245,6 +246,13 @@ class ControllerSaleOrder extends Controller {
 	}
 
 
+        public function delete() {
+		 $this->load->model('sale/order');
+                 $id = intval( $this->request->post['order_id'] );
+                 $this->model_sale_order->deleteOrder( $id );
+	         $this->redirect($this->url->link('sale/order', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+
+        }
 
   	public function invoice() {
 		$this->language->load('sale/order');
@@ -297,20 +305,19 @@ class ControllerSaleOrder extends Controller {
 		foreach ($orders as $order_id) {
 			$order_info = $this->model_sale_order->getOrder($order_id);
 
+
 			if ($order_info) {
-				$store_info = $this->model_setting_setting->getSetting('config', $order_info['store_id']);
+
+                                $store_info = $this->model_setting_setting->getSetting('config',0);
+         	                $store_name = $store_info['config_name'];	
+                                
+                                $store_url =  $this->config->get('config_secure') ? HTTPS_SERVER : HTTP_SERVER;	
+                            	
+				$store_address = $this->config->get('config_address');
+				$store_email = $this->config->get('config_email');
+				$store_telephone = $this->config->get('config_telephone');
+				$store_fax = $this->config->get('config_fax');
 				
-				if ($store_info) {
-					$store_address = $store_info['config_address'];
-					$store_email = $store_info['config_email'];
-					$store_telephone = $store_info['config_telephone'];
-					$store_fax = $store_info['config_fax'];
-				} else {
-					$store_address = $this->config->get('config_address');
-					$store_email = $this->config->get('config_email');
-					$store_telephone = $this->config->get('config_telephone');
-					$store_fax = $this->config->get('config_fax');
-				}
 				
 
 
@@ -341,27 +348,35 @@ class ControllerSaleOrder extends Controller {
 						'model'    => $product['model'],
 						'option'   => $option_data,
 						'quantity' => $product['quantity'],
-						'price'    => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
-						'total'    => $this->currency->format($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0), $order_info['currency_code'], $order_info['currency_value'])
+						'price'    => 
+                                                $this->currency->format($product['price'] +
+                                               ($this->config->get('config_tax') ? $product['tax'] : 0)),
+						'total'    => 
+                                                $this->currency->format($product['total'] + 
+                                                ($this->config->get('config_tax') ? 
+                                                  ($product['tax'] * $product['quantity']) : 0))
 					);
 				}
 				
 				$total_data = $this->model_sale_order->getOrderTotals($order_id);
 
+
 				$this->data['orders'][] = array(
 					'order_id'	         => $order_id,
 					'datePurchased'         => date($this->language->get('date_format_short'), strtotime($order_info['datePurchased'])),
-					'store_name'         => $order_info['store_name'],
-					'store_url'          => rtrim($order_info['store_url'], '/'),
+					'fulfillmentDate'         => date($this->language->get('date_format_short'), strtotime($order_info['fulfillmentDate'])),
 					'store_address'      => nl2br($store_address),
 					'store_email'        => $store_email,
 					'store_telephone'    => $store_telephone,
 					'store_fax'          => $store_fax,
 					'email'              => $order_info['email'],
-					'telephone'          => $order_info['telephone'],
+					'contactNumber'          => $order_info['contactNumber'],
+					'firstName'          => $order_info['firstName'],
+					'lastName'          => $order_info['lastName'],
 					'product'            => $product_data,
 					'total'              => $total_data,
-					'comment'            => nl2br($order_info['comment'])
+					'store_name'              => $store_name,
+					'store_url'              => $store_url,
 				);
 			}
 		}
@@ -472,8 +487,9 @@ class ControllerSaleOrder extends Controller {
       		'separator' => false
    		);
 
+                
    		$this->data['breadcrumbs'][] = array(
-       		'text'      => $this->language->get('heading_title'),
+       		'text'      => $this->language->get("All Orders"),
 			'href'      => $this->url->link('sale/order', 'token=' . $this->session->data['token'] . $url, 'SSL'),
       		'separator' => ' :: '
    		);
@@ -527,7 +543,7 @@ class ControllerSaleOrder extends Controller {
 			);
 		}
 
-		$this->data['heading_title'] = $this->language->get('heading_title');
+		$this->data['heading_title'] = "Orders Listing";
 
 		$this->data['text_no_results'] = $this->language->get('text_no_results');
 		$this->data['text_missing'] = $this->language->get('text_missing');

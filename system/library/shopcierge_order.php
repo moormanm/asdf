@@ -62,7 +62,7 @@ class ShopciergeOrder {
                 'reservationNumber'  =>  $data->row['reservationNumber'],
                 'total'              =>  (float)$data->row['total'],
                 'order_status'       =>  $data->row['order_status_id'],
-                'ip'       =>  "127.0.0.1" 
+                'ip'       =>            $data->row['ipAddress'] 
              );
          }
          
